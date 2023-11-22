@@ -730,17 +730,4 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
-body {
-  position: relative;
-  background: #e4ffae;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #2e2e2e;
-  margin: 0;
-  padding: 0;
-  width: 1240px;
-}
-
-.title {
- padding: 100px 0 0 100px;
-}
+html{scroll-behavior:smooth}body{font-size:14px;line-height:1.6;background:#f2f2f2;color:#353732;font-family:"Georgia",serif}img{display:block;max-width:100%;height:auto;-o-object-fit:cover;object-fit:cover}ul{margin:0;padding:0;list-style-type:none}li{list-style:none}h1,h2,h3,h4,h5,h6,p{margin:0;padding:0}a{text-decoration:none;color:#353732}address{font-style:normal}
