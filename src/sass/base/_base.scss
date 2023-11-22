@@ -1,0 +1,18 @@
+html {
+  scroll-behavior: smooth; /* плавная прокрутка скрол */
+}
+
+body {
+  @include font(14px, 1.6);
+
+  background: $primary-bg-fon;
+  color: $primary-clr-t;
+  font-family: 'Georgia', serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
