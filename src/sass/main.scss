@@ -1,1 +1,8 @@
-@import './body';
+// UTILS
+@import './utils/mixin';
+@import './utils/variables';
+
+// BASE
+@import './base/base';
+// @import './base/fonts';
+@import './base/reset';

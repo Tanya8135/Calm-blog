@@ -1,0 +1,20 @@
+/* Georgia */
+@font-face {
+  font-display: swap;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../font/noto-serif-georgian-v24-latin-regular.woff2')
+      format('woff2'),
+    url('../../font/noto-serif-georgian-v24-latin-regular.woff') format('woff');
+}
+
+// Poppits
+@font-face {
+  font-display: swap;
+  font-family: 'Poppits';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../font/poppins-v20-latin-regular.woff2') format('woff2'),
+    url('../../font/noto-serif-georgian-v24-latin-regular.woff') format('woff');
+}

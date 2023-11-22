@@ -1,6 +1,7 @@
 import Swiper from "swiper/bundle";
 import 'swiper/css/bundle';
-import './styles.css';
+// import './styles.css';
+import './css/main.min.css'
 
 document.addEventListener('DOMContentLoaded', function () {
     const swiper = new Swiper('.swiper', {
