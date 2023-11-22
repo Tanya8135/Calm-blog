@@ -1,2 +1,5 @@
 # .gitattributes
 .babelrc text eol=lf
+
+# # .gitattributes
+# * text=auto eol=lf
