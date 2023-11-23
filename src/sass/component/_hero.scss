@@ -1,0 +1,15 @@
+.hero-container {
+  padding: 52px 20px 32px 20px;
+}
+
+.hero-logo {
+  min-width: 84px;
+  min-height: 42px;
+}
+
+.hero-title {
+  @include font(23px, 1.7);
+  font-weight: 200;
+  color: $secondary-clr-t;
+  padding: 20px 0 0 0;
+}
