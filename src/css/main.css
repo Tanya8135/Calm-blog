@@ -182,4 +182,76 @@ address {
 
 .article-card-slider {
   padding-bottom: 32px;
+}
+
+.subscription {
+  position: relative;
+  background-color: #f2f2f2;
+  padding: 62px 0 62px 0;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.subtitle-subscr {
+  font-size: 26px;
+  line-height: 1.3;
+  font-weight: 200;
+  padding-bottom: 20px;
+  -webkit-columns: #353732;
+     -moz-columns: #353732;
+          columns: #353732;
+  margin: 0;
+}
+
+.text-subscr {
+  padding-bottom: 32px;
+}
+
+.subscr-form {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  padding: 0 auto;
+  max-width: 280px;
+  color: #353732;
+  padding-top: 32px;
+}
+
+.data-field {
+  display: block;
+  position: relative;
+  max-width: 280px;
+  margin: 0 auto;
+  margin-bottom: 44px;
+}
+
+.data-input {
+  display: block;
+  position: relative;
+  width: 280px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px 140px;
+}
+
+.data-input {
+  margin: 0;
+}
+
+.data-text {
+  position: absolute;
+  top: -50%;
+  left: 3px;
+}
+
+.btn-subscr {
+  position: absolute;
+  line-height: 1.9;
+  letter-spacing: 0.5em;
+  bottom: 7%;
+  left: 4px;
+  padding: 9px 22px;
+  border-radius: 6px;
+  background-color: #353732;
+  color: #ffffff;
 }/*# sourceMappingURL=main.css.map */
