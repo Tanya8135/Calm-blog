@@ -1,0 +1,56 @@
+.archive {
+  background-color: $section-bg-fon;
+}
+
+.archive-container {
+  @include mobile {
+    max-width: 280px;
+  }
+
+  width: 100%;
+  padding-top: 38px;
+  margin: 0 auto;
+}
+
+.archive-card-img {
+  padding: 0 0 52px 0;
+}
+
+.archive-img {
+  border-radius: 10px;
+}
+
+.archive-title {
+  @include font(16px, 1.5);
+  font-weight: 200;
+  padding: 12px 0 4px 0;
+}
+
+.date-a {
+  @include font(11px, 1.5);
+  padding: 8px 0 0 0;
+}
+
+.archive-btn {
+  @include font(15px, 1.5);
+
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  background-color: transparent;
+  padding: 8px 4px;
+  outline: none;
+  border: none;
+  color: $btn-clr-t;
+}
+
+.arrow-btn {
+  fill: $icon-arrow;
+  max-width: 30px;
+  max-height: 30px;
+  margin: 0 0 0 10px;
+}
+
+.btn-box-archive {
+  padding-bottom: 32px;
+}

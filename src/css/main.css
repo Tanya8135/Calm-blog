@@ -96,6 +96,7 @@ address {
 
 .about-container {
   width: 100%;
+  padding-top: 32px;
   margin: 0 auto;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -254,4 +255,117 @@ address {
   border-radius: 6px;
   background-color: #353732;
   color: #ffffff;
+  outline: none;
+  border: none;
+}
+
+.archive {
+  background-color: #ededed;
+}
+
+.archive-container {
+  width: 100%;
+  padding-top: 38px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .archive-container {
+    max-width: 280px;
+  }
+}
+
+.archive-card-img {
+  padding: 0 0 52px 0;
+}
+
+.archive-img {
+  border-radius: 10px;
+}
+
+.archive-title {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 200;
+  padding: 12px 0 4px 0;
+}
+
+.date-a {
+  font-size: 11px;
+  line-height: 1.5;
+  padding: 8px 0 0 0;
+}
+
+.archive-btn {
+  font-size: 15px;
+  line-height: 1.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  padding: 8px 4px;
+  outline: none;
+  border: none;
+  color: #575445;
+}
+
+.arrow-btn {
+  fill: #575445;
+  max-width: 30px;
+  max-height: 30px;
+  margin: 0 0 0 10px;
+}
+
+.btn-box-archive {
+  padding-bottom: 32px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .footer {
+    max-width: 320px;
+    padding: 62px 20px 32px 20px;
+    margin: 0 auto;
+  }
+}
+
+.footer-text {
+  padding: 12px 0 16px 0;
+  color: #353732;
+}
+
+.nav-footer-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-footer-item {
+  margin-right: 20px;
+  padding-bottom: 20px;
+}
+.nav-footer-item:last-child {
+  margin-right: 0;
+}
+
+.info-footer-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.info-footer-item {
+  margin-right: 52px;
+  padding-bottom: 12px;
+  min-width: 76px;
+}
+.info-footer-item:nth-child(2n) {
+  margin-right: 0;
+}
+.info-footer-item:nth-child(n+3) {
+  padding-bottom: 0;
 }/*# sourceMappingURL=main.css.map */
