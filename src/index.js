@@ -1,27 +1,31 @@
-import Swiper from "swiper/bundle";
-import 'swiper/css/bundle';
-// import './styles.css';
 import './css/main.min.css'
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
+/**
+ * Burger menu
+ */
+(() => {
+    const mobileMenu = document.querySelector('.js-menu-container');
+    const openMenuBtn = document.querySelector('.js-open-menu');
+    const closeMenuBtn = document.querySelector('.js-close-menu');
 
-document.addEventListener('DOMContentLoaded', function () {
-    const swiper = new Swiper('.swiper', {
-        slidesPerView: 2,
-        direction: getDirection(),
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        on: {
-            resize: function () {
-                swiper.changeDirection(getDirection());
-            },
-        },
+    const toggleMenu = () => {
+        const isMenuOpen =
+            openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+        openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
+        mobileMenu.classList.toggle('is-open');
+
+        const scrollLockMethod = !isMenuOpen ? disableBodyScroll : enableBodyScroll;
+    scrollLockMethod(document.body);
+    };
+
+    openMenuBtn.addEventListener('click', toggleMenu);
+    closeMenuBtn.addEventListener('click', toggleMenu);
+
+    // Close the mobile menu on wider screens if the device orientation changes
+    window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
+        if (!e.matches) return;
+        mobileMenu.classList.remove('is-open');
+        openMenuBtn.setAttribute('aria-expanded', false);
+        bodyScrollLock.enableBodyScroll(document.body);
     });
-
-    function getDirection() {
-        const windowWidth = window.innerWidth;
-        const direction = window.innerWidth <= 320 ? 'vertical' : 'horizontal';
-
-        return direction;
-    }
-})
+})();

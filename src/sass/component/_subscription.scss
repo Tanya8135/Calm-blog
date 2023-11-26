@@ -39,19 +39,27 @@
 .data-input {
   display: block;
   position: relative;
-  width: 280px;
+  min-width: 280px;
+  min-height: 38px;
+  margin: 0;
   border: 1px solid $stroke-clr;
   border-radius: 8px;
-  padding: 16px 140px;
-}
+  padding-left: 4px;
+  color: $secondary-clr-t;
 
-.data-input {
-  margin: 0;
+  &:focus {
+    outline: none;
+    border: 1px solid $stroke-clr-focus;
+  }
+
+  &::placeholder {
+    color: #dfdfdf;
+  }
 }
 
 .data-text {
   position: absolute;
-  top: -50%;
+  top: -55%;
   left: 3px;
 }
 

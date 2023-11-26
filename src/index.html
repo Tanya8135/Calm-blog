@@ -21,11 +21,42 @@
             <img src="./images/LogoCalm.svg" alt="logo" />
           </a>
         </div>
-        <button class="burger-menu">
+        <!-- BTN open -->
+        <button
+          type="button"
+          class="burger-menu btn-open js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg width="32" height="32">
             <use href="./images/icons.svg#icon-burger-menu"></use>
           </svg>
         </button>
+      </div>
+
+      <!-- BTN close & Mobile menu (burger menu) -->
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg viewBox="0 0 32 32" width="32">
+            <use xlink:href="./images/icons.svg#icon-btn-close"></use>
+          </svg>
+        </button>
+
+        <!-- Mobile menu (burger menu) -->
+        <div class="mobile-menu__box">
+          <div class="logo logo-bm">
+            <a href="./index.html">
+              <img src="./images/LogoCalm.svg" alt="logo" />
+            </a>
+          </div>
+          <div class="mobile-menu">
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu__link">About</li>
+              <li class="mobile-menu__link">Subscription</li>
+              <li class="mobile-menu__link">Archive</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -116,7 +147,12 @@
         </p>
         <form class="subscr-form">
           <label class="data-field">
-            <input type="text" name="name" class="data-input" placeholder=" " />
+            <input
+              type="text"
+              name="name"
+              class="data-input"
+              placeholder="Enter name"
+            />
             <span class="data-text">Name</span>
           </label>
 
@@ -125,7 +161,7 @@
               type="email"
               name="email"
               class="data-input"
-              placeholder=" "
+              placeholder="Enter mail"
             />
             <span class="data-text">Email Address</span>
           </label>
