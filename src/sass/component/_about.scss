@@ -1,0 +1,87 @@
+.about {
+  background-color: $section-bg-fon;
+  padding: 0 20px;
+}
+
+.about-container {
+  @include mobile {
+    max-width: 280px;
+  }
+
+  width: 100%;
+  padding-top: 32px;
+  margin: 0 auto;
+}
+
+.about-card-img {
+  padding: 0 0 32px 0;
+}
+
+.article-card {
+  padding-bottom: 32px;
+}
+
+.card-box {
+  max-width: 243px;
+  background-color: #fff;
+  padding-bottom: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.type-card {
+  @include font(12px, 1);
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: $secondary-clr-t;
+  padding: 20px 0 12px 0;
+}
+
+.type-card-p {
+  @include font(12px, 1);
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  padding: 20px 0 0 20px;
+}
+
+.card-title {
+  @include font(25px, 1.3);
+  font-weight: 200;
+  padding: 0 0 16px 0;
+}
+
+.card-title-artcl {
+  @include font(16px, 1.4);
+  font-weight: 200;
+  padding: 12px 0 8px 20px;
+}
+
+.card-title-artcl-sl {
+  @include font(16px, 1.4);
+  font-weight: 200;
+  padding: 10px 0 20px 20px;
+}
+
+.card-description {
+  width: 280px;
+}
+
+.date {
+  @include font(11px, 1.5);
+  padding: 20px 0 0 0;
+}
+
+.date-p {
+  @include font(11px, 1.5);
+  padding: 0 0 0 20px;
+}
+
+.slider {
+  max-width: 243px;
+  margin: 0 auto;
+}
+
+.article-card-slider {
+  padding-bottom: 32px;
+}
