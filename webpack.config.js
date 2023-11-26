@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ImageminWebpackPlugin = require('imagemin-webpack-plugin').default;
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const ImageminWebpWebpackPlugin = require('imagemin-webp-webpack-plugin')
 
 module.exports = {
     entry: {
@@ -78,14 +79,19 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: 'styles.css',
         }),
-        new ImageminWebpackPlugin({
-            test: /\.(jpe?g|png|gif|svg)$/i,
-            disable: process.env.NODE_ENV !== 'production',
+        new ImageminWebpWebpackPlugin({
+            config: [{
+                test: /\.(jpe?g|png)$/i,
+                options: {
+                    quality: 75,
+                },
+            }],
+            overrideExtension: true,
         }),
         new CopyWebpackPlugin({
             patterns: [
-                { from: 'src/images', to: 'images' }
-            ]
-        })
-    ]
+                { from: 'src/images', to: 'images' },
+            ],
+        }),
+    ],
 };

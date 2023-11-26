@@ -77,7 +77,19 @@
       <section class="about">
         <div class="about-container">
           <article class="about-card-img">
-            <img src="./images/mob_320/mountains_280.png" alt="Mountains" />
+            <picture>
+              <source
+                type="image/webp"
+                srcset="./images/mob_320/mountains@2_280.png 2x"
+                media="(min-width: 320px)"
+              />
+              <img
+                srcset="./images/mob_320/mountains@2_280.png 2x"
+                src="./images/mob_320/mountains_280.png"
+                alt="Mountains"
+              />
+            </picture>
+
             <p class="type-card">Travel</p>
             <h2 hidden></h2>
             <h3 class="card-title">Travel spots in Iceland</h3>
@@ -91,7 +103,12 @@
           </article>
 
           <article class="article-card">
-            <img src="./images/mob_320/climbing_243.png" alt="Climbing" />
+            <img
+              srcset="./images/mob_320/climbing@2_243.png 2x"
+              sizes="(max-width: 320px) 280px, (max-width: 640px) 600px, 800px"
+              src="./images/mob_320/climbing_243.png"
+              alt="Climbing"
+            />
             <div class="card-box">
               <p class="type-card-p">Exercise</p>
               <h4 class="card-title-artcl">Climbing as exercise</h4>
