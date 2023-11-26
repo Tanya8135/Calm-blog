@@ -277,16 +277,22 @@ address {
 .archive-card-img {
   padding: 0 0 52px 0;
 }
+.archive-card-img__noImg {
+  padding: 0 0 44px 0;
+}
 
 .archive-img {
   border-radius: 10px;
 }
 
 .archive-title {
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 17px;
+  line-height: 1.6;
   font-weight: 200;
   padding: 12px 0 4px 0;
+}
+.archive-title__noImg {
+  padding: 0px 0 4px 0;
 }
 
 .date-a {
