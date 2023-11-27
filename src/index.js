@@ -1,4 +1,5 @@
-/* Рознести логіки по різним js файлам */
+/* Рознести логіки по різним js файлам
+створити гілку */
 import './css/main.min.css'
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 
