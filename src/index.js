@@ -1,4 +1,4 @@
-import { element } from 'prop-types';
+/* Рознести логіки по різним js файлам */
 import './css/main.min.css'
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 
