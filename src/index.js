@@ -1,6 +1,8 @@
 /* Рознести логіки по різним js файлам
 створити гілку */
 import './css/main.min.css'
+import './sass/component/_lightBox.scss'
+import './js/test.css'
 import './js/burgerMenu'
 import './js/loadMore'
 
@@ -22,13 +24,14 @@ const createGalleryItem = ({ preview, original, description }) =>
     `
 <li class="gallery__item">
      <a class="gallery__link" href="${original}">
-       <img
+     <img
          class="gallery__image"
          src="${preview}"
          data-source="${original}"
          alt="${description}"
        />
      </a>
+     <div class="test"></div>
    </li>
 `
 
