@@ -1,60 +1,40 @@
 /* Рознести логіки по різним js файлам
 створити гілку */
 import './css/main.min.css'
-import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
+import './js/burgerMenu'
+import './js/loadMore'
 
-/**
- * Burger menu
- */
-(() => {
-    const mobileMenu = document.querySelector('.js-menu-container');
-    const openMenuBtn = document.querySelector('.js-open-menu');
-    const closeMenuBtn = document.querySelector('.js-close-menu');
+import { galleryItems } from './js/gallery-items'
+// import simpleLightbox from 'simplelightbox'
+// import customLightbox from 'simplelightbox/dist/simple-lightbox.esm'
+import 'simplelightbox/dist/simple-lightbox.min.css';
+import SimpleLightbox from 'simplelightbox';
 
-    const toggleMenu = () => {
-        const isMenuOpen =
-            openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
-        openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
-        mobileMenu.classList.toggle('is-open');
+const link = document.querySelector('.link')
+link.addEventListener('click', function (evt) {
+    evt.preventDefault();
 
-        const scrollLockMethod = !isMenuOpen ? disableBodyScroll : enableBodyScroll;
-        scrollLockMethod(document.body);
-    };
+    lightbox.open()
+})
 
-    openMenuBtn.addEventListener('click', toggleMenu);
-    closeMenuBtn.addEventListener('click', toggleMenu);
+const galleryList = document.querySelector('.gallery')
+const createGalleryItem = ({ preview, original, description }) =>
+    `
+<li class="gallery__item">
+     <a class="gallery__link" href="${original}">
+       <img
+         class="gallery__image"
+         src="${preview}"
+         data-source="${original}"
+         alt="${description}"
+       />
+     </a>
+   </li>
+`
 
-    // Close the mobile menu on wider screens if the device orientation changes
-    window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
-        if (!e.matches) return;
-        mobileMenu.classList.remove('is-open');
-        openMenuBtn.setAttribute('aria-expanded', false);
-        bodyScrollLock.enableBodyScroll(document.body);
-    });
-})();
+const galleryMarkup = galleryItems.map(item => createGalleryItem(item)).join('')
+galleryList.insertAdjacentHTML('beforeend', galleryMarkup)
 
-/**
- * Load more -- View archive
- */
-const archiveBtn = document.querySelector('.archive-btn');
-const archiveList = document.querySelector('.archive-list');
-import listArchive from './js/item';
+const lightbox = new SimpleLightbox('.gallery a.gallery__link')
 
-// Додати обробник подій для кнопки
-archiveBtn.addEventListener('click', function () {
-    // Якщо список вже відкритий, закрити його
-    if (archiveList.style.display === 'block') {
-        archiveList.style.display = 'none';
-        archiveList.innerHTML = ''; // Видалити попередні елементи списку
-        archiveBtn.innerHTML = "View archive" + `<svg width="30" height="30" style="fill: #575445; margin-left: 10px;">
-        <use href="./images/icons.svg#icon-arrow-btn"></use>
-    </svg>`;
-    } else {
-        // Якщо список закритий, відкрити його та додати новий елемент
-        archiveList.style.display = 'block';
-        const newListItem = document.createElement('li');
-        newListItem.innerHTML = listArchive;
-        archiveList.appendChild(newListItem);
-        archiveBtn.textContent = "Close archive";
-    }
-});
+console.log(galleryItems);
