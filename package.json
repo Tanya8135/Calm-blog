@@ -60,6 +60,7 @@
     "lodash": "^4.17.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "swiper": "^11.0.4"
+    "simplelightbox": "^2.14.2",
+    "swiper": "^11.0.5"
   }
 }
