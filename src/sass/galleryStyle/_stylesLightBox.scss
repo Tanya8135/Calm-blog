@@ -64,19 +64,7 @@
 }
 
 .sl-close {
-  display: none;
-  position: fixed;
-  right: 30px;
-  top: 30px;
-  z-index: 10060;
-  margin-top: -14px;
-  margin-right: -14px;
-  height: 44px;
-  width: 44px;
-  line-height: 44px;
-  font-family: Arial, Baskerville, monospace;
   color: #45525b !important;
-  font-size: 3rem;
 }
 
 .sl-counter {
@@ -84,15 +72,9 @@
 }
 
 .sl-wrapper .sl-navigation button {
-  position: fixed;
-  top: 50%;
-  margin-top: -22px;
-  height: 44px;
-  width: 22px;
-  line-height: 44px;
-  text-align: center;
-  display: block;
-  z-index: 10060;
-  font-family: Arial, Baskerville, monospace;
   color: #353732 !important;
+}
+
+.sl-wrapper .sl-image img {
+  border-radius: 4px;
 }
