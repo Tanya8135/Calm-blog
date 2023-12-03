@@ -16,10 +16,10 @@ module.exports = {
     mode: 'development',
     module: {
         rules: [
-            // {
-            //     test: /\.html$/,
-            //     use: ['html-loader'],
-            // },
+            {
+                test: /\.html$/,
+                use: ['html-loader'],
+            },
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
@@ -91,6 +91,7 @@ module.exports = {
         new CopyWebpackPlugin({
             patterns: [
                 { from: 'src/images', to: 'images' },
+                { from: 'srcset/images', to: 'images' },
             ],
         }),
     ],
