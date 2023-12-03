@@ -16,10 +16,10 @@ module.exports = {
     mode: 'development',
     module: {
         rules: [
-            {
-                test: /\.html$/,
-                use: ['html-loader'],
-            },
+            // {
+            //     test: /\.html$/,
+            //     use: ['html-loader'],
+            // },
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
