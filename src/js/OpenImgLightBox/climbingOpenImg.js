@@ -1,4 +1,4 @@
-import { galleryItemsClimbing } from './gallery/galleryClimbing'
+import { galleryItemsClimbing } from '../gallery/galleryClimbing'
 import 'simplelightbox/dist/simple-lightbox.min.css';
 import SimpleLightbox from 'simplelightbox';
 
@@ -21,7 +21,6 @@ const createGalleryItem = ({ preview, original, description }) =>
          alt="${description}"
        />
      </a>
-     <div class="test"></div>
    </li>
 `
 
@@ -30,4 +29,4 @@ galleryList.insertAdjacentHTML('beforeend', galleryMarkup)
 
 const lightbox = new SimpleLightbox('.galleryCl a.gallery__link')
 
-console.log(galleryItems);
+console.log(galleryItemsClimbing);
