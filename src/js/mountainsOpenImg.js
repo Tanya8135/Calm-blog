@@ -4,14 +4,14 @@ import { galleryItems } from './gallery/galleryMountains'
 import 'simplelightbox/dist/simple-lightbox.min.css';
 import SimpleLightbox from 'simplelightbox';
 
-const link = document.querySelector('.linkCl')
+const link = document.querySelector('.link')
 link.addEventListener('click', function (evt) {
   evt.preventDefault();
 
   lightbox.open()
 })
 
-const galleryList = document.querySelector('.galleryCl')
+const galleryList = document.querySelector('.gallery')
 const createGalleryItem = ({ preview, original, description }) =>
   `
 <li class="gallery__item">
@@ -30,6 +30,6 @@ const createGalleryItem = ({ preview, original, description }) =>
 const galleryMarkup = galleryItems.map(item => createGalleryItem(item)).join('')
 galleryList.insertAdjacentHTML('beforeend', galleryMarkup)
 
-const lightbox = new SimpleLightbox('.galleryCl a.gallery__link')
+const lightbox = new SimpleLightbox('.gallery a.gallery__link')
 
 console.log(galleryItems);
