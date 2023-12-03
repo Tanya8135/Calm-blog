@@ -2,26 +2,26 @@ export const galleryItemsClimbing = [
   {
     original:
       '/images/imgSimpleBox/climbing1_1280.png',
-    description: 'Montain sun',
+    description: 'Night climbing',
   },
   {
     original:
       '/images/imgSimpleBox/climbing2_1280.png',
-    description: 'Field mountain forest',
+    description: 'Climbing aid',
   },
   {
     original:
       '/images/imgSimpleBox/climbing3_1280.png',
-    description: 'Mountain liner village',
+    description: 'heavy lifting',
   },
   {
     original:
       '/images/imgSimpleBox/climbing4_1280.png',
-    description: 'Mountains forest road',
+    description: 'Climbing breakage',
   },
   {
     original:
       '/images/imgSimpleBox/climbing5_1280.png',
-    description: 'Mountain flowers sunset sky'
+    description: 'Climbing gorge'
   },
 ];

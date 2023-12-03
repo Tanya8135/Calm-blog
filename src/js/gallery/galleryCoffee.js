@@ -2,26 +2,26 @@ export const galleryItemsCoffee = [
     {
         original:
             '/images/imgSimpleBox/coffee1_1280.png',
-        description: 'Montain sun',
+        description: 'Morning coffee',
     },
     {
         original:
             '/images/imgSimpleBox/coffee2_1280.png',
-        description: 'Field mountain forest',
+        description: 'Mountain coffee mug',
     },
     {
         original:
             '/images/imgSimpleBox/coffee3_1280.png',
-        description: 'Mountain liner village',
+        description: 'Coffee barge',
     },
     {
         original:
             '/images/imgSimpleBox/coffee4_1280.png',
-        description: 'Mountains forest road',
+        description: 'A cup of coffee and the mountains',
     },
     {
         original:
             '/images/imgSimpleBox/coffee5_1280.png',
-        description: 'Mountain flowers sunset sky'
+        description: 'Coffee break'
     },
 ];
