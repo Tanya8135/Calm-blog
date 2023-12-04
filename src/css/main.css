@@ -279,6 +279,7 @@ address {
 }
 
 .archive {
+  padding: 0 20px;
   background-color: #ededed;
 }
 

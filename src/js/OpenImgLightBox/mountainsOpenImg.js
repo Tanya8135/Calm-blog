@@ -2,7 +2,7 @@ import { galleryItems } from '../gallery/galleryMountains'
 // import simpleLightbox from 'simplelightbox'
 // import customLightbox from 'simplelightbox/dist/simple-lightbox.esm'
 import 'simplelightbox/dist/simple-lightbox.min.css';
-import SimpleLightbox from 'simplelightbox';
+import simpleLightbox from 'simplelightbox';
 
 const link = document.querySelector('.link')
 link.addEventListener('click', function (evt) {
@@ -29,6 +29,6 @@ const createGalleryItem = ({ preview, original, description }) =>
 const galleryMarkup = galleryItems.map(item => createGalleryItem(item)).join('')
 galleryList.insertAdjacentHTML('beforeend', galleryMarkup)
 
-const lightbox = new SimpleLightbox('.gallery a.gallery__link')
+const lightbox = new simpleLightbox('.gallery a.gallery__link')
 
 console.log(galleryItems);
