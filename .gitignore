@@ -9,7 +9,7 @@ swiperJS.js
 slickSliderDraft.js
 
 components/
-dist
+/dist/
 
 # User-specific files
 *.rsuser
