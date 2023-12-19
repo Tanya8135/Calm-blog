@@ -28,5 +28,3 @@ const galleryMarkup = galleryItemsClimbing.map(item => createGalleryItem(item)).
 galleryList.insertAdjacentHTML('beforeend', galleryMarkup)
 
 const lightbox = new SimpleLightbox('.galleryCl a.gallery__link')
-
-console.log(galleryItemsClimbing);

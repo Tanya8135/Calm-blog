@@ -28,5 +28,3 @@ const galleryMarkup = galleryItemsDrone.map(item => createGalleryItem(item)).joi
 galleryList.insertAdjacentHTML('beforeend', galleryMarkup)
 
 const lightbox = new SimpleLightbox('.galleryDrone a.gallery__link')
-
-console.log(galleryItemsDrone);

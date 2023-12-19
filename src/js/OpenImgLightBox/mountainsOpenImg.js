@@ -30,5 +30,3 @@ const galleryMarkup = galleryItems.map(item => createGalleryItem(item)).join('')
 galleryList.insertAdjacentHTML('beforeend', galleryMarkup)
 
 const lightbox = new simpleLightbox('.gallery a.gallery__link')
-
-console.log(galleryItems);

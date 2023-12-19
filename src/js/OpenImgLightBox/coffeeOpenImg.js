@@ -28,5 +28,3 @@ const galleryMarkup = galleryItemsCoffee.map(item => createGalleryItem(item)).jo
 galleryList.insertAdjacentHTML('beforeend', galleryMarkup)
 
 const lightbox = new SimpleLightbox('.galleryCoffee a.gallery__link')
-
-console.log(galleryItemsCoffee);
