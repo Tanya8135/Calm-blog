@@ -1,34 +1,24 @@
-import Swiper from "swiper";
-import 'swiper/css/bundle';
-
-const swiperOpt = new Swiper('.swiper', {
-    speed: 400,
-    slidesPerView: 1,
-    spaceBetween: 100,
-});
-
-
-
+// import Swiper from "swiper";
+// import 'swiper/css/bundle';
+// // import 'swiper/css/swiper.min.css';
+// import 'swiper/css/effect-cube';
 
 // document.addEventListener('DOMContentLoaded', function () {
-//     const swiper = new Swiper('.swiper', {
-//         slidesPerView: 2,
-//         direction: getDirection(),
-//         navigation: {
-//             nextEl: '.swiper-button-next',
-//             prevEl: '.swiper-button-prev',
-//         },
-//         on: {
-//             resize: function () {
-//                 swiper.changeDirection(getDirection());
+//     const swiper = document.querySelector('.swiper');
+
+//     if (swiper) {
+//         new Swiper(swiper, {
+//             speed: 400,
+//             slidesPerView: 1,
+//             spaceBetween: 100,
+
+//             effect: 'cube',
+//             cubeEffect: {
+//                 slideShadows: false,
+//                 shadow: true,
+//                 shadowOffset: 20,
+//                 shadowScale: 0.94,
 //             },
-//         },
-//     });
-
-//     function getDirection() {
-//         const windowWidth = window.innerWidth;
-//         const direction = window.innerWidth <= 320 ? 'vertical' : 'horizontal';
-
-//         return direction;
+//         });
 //     }
-// })
+// });

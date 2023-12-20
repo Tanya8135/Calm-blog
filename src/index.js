@@ -10,7 +10,7 @@ import './js/OpenImgLightBox/cameraOpenImg';
 import './js/OpenImgLightBox/droneOpenImg';
 import './js/OpenImgLightBox/coffeeOpenImg';
 
-import './js/slider'
+import './js/slider';
 
 
 /**
