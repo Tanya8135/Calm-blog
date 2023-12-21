@@ -22,3 +22,20 @@
 //         });
 //     }
 // });
+
+
+import Swiper from 'swiper/bundle';
+import 'swiper/css/effect-cube';
+
+document.addEventListener('DOMContentLoaded', function () {
+    const swiper = new Swiper('.swiper', {
+        effect: 'cube',
+        grabCursor: true,
+        cubeEffect: {
+            shadow: true,
+            slideShadows: true,
+            shadowOffset: 20,
+            shadowScale: 0.94,
+        },
+    });
+});

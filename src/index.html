@@ -12,6 +12,12 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" type="text/html" href="./css/main.min.css" />
+
+    <!-- Styles slider cube -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -170,7 +176,7 @@
             <p class="date-p">November 24, 2021</p>
           </article>
           <!-- REACT -->
-          <div id="app"></div>
+          <!-- <div id="app"></div> -->
           <div class="swiper slider">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -224,6 +230,7 @@
                   </div>
                 </article>
               </div>
+              <div class="swiper-cube-shadow1"></div>
             </div>
           </div>
         </div>
@@ -351,7 +358,20 @@
         </div>
       </div>
     </footer>
-    <!-- <div id="app"></div> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper('.swiper', {
+        effect: 'cube',
+        grabCursor: true,
+        cubeEffect: {
+          shadow: true,
+          slideShadows: true,
+          shadowOffset: 20,
+          shadowScale: 0.94,
+        },
+      });
+    </script> -->
     <script type="text/html" src="./main.js"></script>
   </body>
 </html>

@@ -15,7 +15,7 @@
 
 .about-card-img {
   padding: 0 0 32px 0;
-  // width: 280px; /* ??? */
+  width: 280px; /* ??? */
 }
 
 .article-card {
@@ -85,4 +85,16 @@
 
 .article-card-slider {
   padding-bottom: 32px;
+  width: 243px;
+}
+
+.swiper-cube .swiper-cube-shadow:before {
+  content: '';
+  background: $secondary-clr-t !important;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  filter: blur(50px);
 }
