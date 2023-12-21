@@ -91,7 +91,7 @@ address {
 
 .about {
   background-color: #ededed;
-  padding: 0 20px;
+  padding: 0 20px 8px 20px;
 }
 
 .about-container {
@@ -107,7 +107,6 @@ address {
 
 .about-card-img {
   padding: 0 0 32px 0;
-  width: 280px; /* ??? */
 }
 
 .article-card {
@@ -116,6 +115,7 @@ address {
 
 .card-box {
   max-width: 243px;
+  min-height: 134px;
   background-color: #fff;
   padding-bottom: 10px;
   border-bottom-left-radius: 10px;
@@ -183,13 +183,13 @@ address {
 }
 
 .article-card-slider {
-  padding-bottom: 32px;
+  padding-bottom: 24px;
   width: 243px;
 }
 
 .swiper-cube .swiper-cube-shadow:before {
   content: "";
-  background: #353732 !important;
+  background: none !important;
   position: absolute;
   left: 0;
   top: 0;
