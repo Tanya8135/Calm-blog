@@ -181,6 +181,11 @@ address {
   max-width: 243px;
   margin: 0 auto;
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .slider {
+    display: none;
+  }
+}
 
 .article-card-slider {
   padding-bottom: 24px;

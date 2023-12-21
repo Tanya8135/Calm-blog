@@ -79,6 +79,9 @@
 }
 
 .slider {
+  @include tablet {
+    display: none;
+  }
   max-width: 243px;
   margin: 0 auto;
 }
