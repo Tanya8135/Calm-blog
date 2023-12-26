@@ -89,7 +89,14 @@
           <article class="about-card-img">
             <a href="" class="link">
               <img
-                srcset="./images/mob_320/mountains@2_280.png 2x"
+                srcset="
+                  ./images/mob_320/mountains@2_280.png    2x,
+                  ./images/tablet_768/mountains_505.png   1x,
+                  ./images/tablet_768/mountains@2_505.png 2x,
+                  ./images/desk_1440/mountains_507.png    1x,
+                  ./images/desk_1440/mountains@2_507.png  2x
+                "
+                sizes="(min-width: 1440px) 507px, (min-width: 768px) 505px, (min-width: 320px) 280px, 100vw"
                 src="./images/mob_320/mountains_280.png"
                 alt="Mountains"
               />

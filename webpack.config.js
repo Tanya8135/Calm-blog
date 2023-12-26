@@ -12,7 +12,9 @@ module.exports = {
     output: {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
+        assetModuleFilename: './images/[name].[contenthash][ext]',
     },
+
     mode: 'development',
     module: {
         rules: [
@@ -47,6 +49,17 @@ module.exports = {
                     'css-loader',
                     'postcss-loader',
                 ],
+            },
+            {
+                test: /\.(png|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
+            },
+            {
+                test: /\.svg$/,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'icons/[name].[contenthash][ext]',
+                },
             },
             {
                 test: /\.module\.css$/,
