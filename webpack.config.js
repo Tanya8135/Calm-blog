@@ -1,22 +1,9 @@
 const path = require('path');
-// const fs = require('fs');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ImageminWebpackPlugin = require('imagemin-webpack-plugin').default;
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ImageminWebpWebpackPlugin = require('imagemin-webp-webpack-plugin');
-
-// const filesDir = './src/partials';
-// const files = fs.readdirSync(filesDir);
-
-// const htmlPlugins = files.map(file => {
-//     return new HtmlWebpackPlugin({
-//         template: `./src/partials/${file}`,
-//         filename: file.replace('.html', '.ejs'),
-//         inject: 'body',
-//         content: file.replace('.html', ''),
-//     })
-// })
 
 module.exports = {
     entry: {
@@ -86,7 +73,6 @@ module.exports = {
         ],
     },
     plugins: [
-        // ...htmlPlugins,
         new HtmlWebpackPlugin({
             template: './src/index.html',
             filename: 'index.html',
