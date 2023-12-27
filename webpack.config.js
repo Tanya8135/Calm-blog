@@ -58,13 +58,13 @@ module.exports = {
                         options: {
                             mozjpeg: {
                                 progressive: true,
-                                quality: 65,
+                                quality: 85,
                             },
                             optipng: {
                                 enabled: false,
                             },
                             pngquant: {
-                                quality: [0.65, 0.90],
+                                quality: [0.85, 0.90],
                                 speed: 4,
                             },
                             gifsicle: {
@@ -122,7 +122,7 @@ module.exports = {
             config: [{
                 test: /\.(jpe?g|png)$/i,
                 options: {
-                    quality: 75,
+                    quality: 85,
                 },
             }],
             overrideExtension: true,
