@@ -1,7 +1,12 @@
 .about {
-  // @include tablet {
-  //   padding: 0 131px;
-  // }
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px 0 15px;
+    margin: 0 auto;
+  }
 
   background-color: $section-bg-fon;
   padding: 0 20px 8px 20px;
@@ -9,8 +14,10 @@
 
 .about-container {
   @include tablet {
-    // padding-top: 50px;
-    padding: 50px 131px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   @include mobile {
@@ -24,11 +31,13 @@
 
 .about-box {
   display: flex;
+  padding-top: 62px;
 }
 
 .about-card-img {
   @include tablet {
     max-width: 505px;
+    margin: 0;
     background-color: $accent-clr;
   }
 
@@ -49,6 +58,7 @@
 
 .revers {
   flex-direction: row-reverse;
+  margin-top: 32px;
 }
 
 .about-card-text {
@@ -70,6 +80,10 @@
 }
 
 .card-box {
+  @include tablet {
+    height: 146px;
+  }
+
   max-width: 243px;
   min-height: 134px;
   background-color: #fff;
@@ -77,12 +91,6 @@
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-
-// .card-box-line {
-//   @include tablet {
-
-//   }
-// }
 
 .type-card {
   @include tablet {
@@ -99,18 +107,16 @@
 .type-card-p {
   @include tablet {
     padding: 32px 0 0 20px;
+
+    &__revers {
+      padding: 32px 20px 0 0;
+    }
   }
 
   @include font(12px, 1);
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
   padding: 20px 0 0 20px;
-}
-
-.type-card-p-revers {
-  @include tablet {
-    padding: 32px 20px 0 0;
-  }
 }
 
 .card-title {
@@ -120,15 +126,14 @@
 }
 
 .card-title-artcl {
+  @include tablet {
+    &__revers {
+      padding: 12px 20px 12px 0;
+    }
+  }
   @include font(16px, 1.4);
   font-weight: 200;
   padding: 12px 0 8px 20px;
-}
-
-.card-title-artcl-revers {
-  @include tablet {
-    padding: 12px 20px 12px 0;
-  }
 }
 
 .card-title-artcl-line {
@@ -147,7 +152,7 @@
   @include tablet {
     width: auto;
   }
-  letter-spacing: 0.03em;
+  letter-spacing: 0.05em;
   width: 280px;
 }
 
@@ -160,25 +165,30 @@
 }
 
 .date-p {
+  @include tablet {
+    &__revers {
+      padding: 0 20px 0 0px;
+    }
+  }
   @include font(11px, 1.5);
   padding: 0 0 0 20px;
 }
 
-.date-p-revers {
-  @include tablet {
-    padding: 0 20px 0 0px;
-  }
-}
-
+// SLIDER
 .slider {
   @include tablet {
     display: none;
   }
+
   max-width: 243px;
   margin: 0 auto;
 }
 
 .article-card-slider {
+  @include tablet {
+    display: none;
+  }
+
   padding-bottom: 24px;
   width: 243px;
 }
@@ -192,4 +202,27 @@
   bottom: 0;
   right: 0;
   filter: blur(50px);
+}
+
+.no-slider {
+  @include tablet {
+    padding: 16px 0 50px 0;
+  }
+}
+
+.article-card-list {
+  @include tablet {
+    display: flex;
+  }
+}
+
+.article-card-item {
+  @include tablet {
+    max-width: 240px;
+    margin-right: 17px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }

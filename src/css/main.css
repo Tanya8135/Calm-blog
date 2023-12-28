@@ -93,6 +93,25 @@ address {
   background-color: #ededed;
   padding: 0 20px 8px 20px;
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 15px 0 15px;
+    margin: 0 auto;
+  }
+}
 
 .about-container {
   width: 100%;
@@ -101,7 +120,19 @@ address {
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .about-container {
-    padding: 50px 131px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -114,6 +145,7 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 62px;
 }
 
 .about-card-img {
@@ -122,6 +154,7 @@ address {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .about-card-img {
     max-width: 505px;
+    margin: 0;
     background-color: #ffffff;
   }
 }
@@ -146,6 +179,7 @@ address {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+  margin-top: 32px;
 }
 
 .about-card-text {
@@ -172,6 +206,11 @@ address {
   padding-bottom: 10px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .card-box {
+    height: 146px;
+  }
 }
 
 .type-card {
@@ -200,10 +239,7 @@ address {
   .type-card-p {
     padding: 32px 0 0 20px;
   }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .type-card-p-revers {
+  .type-card-p__revers {
     padding: 32px 20px 0 0;
   }
 }
@@ -221,9 +257,8 @@ address {
   font-weight: 200;
   padding: 12px 0 8px 20px;
 }
-
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .card-title-artcl-revers {
+  .card-title-artcl__revers {
     padding: 12px 20px 12px 0;
   }
 }
@@ -243,7 +278,7 @@ address {
 }
 
 .card-description {
-  letter-spacing: 0.03em;
+  letter-spacing: 0.05em;
   width: 280px;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -268,9 +303,8 @@ address {
   line-height: 1.5;
   padding: 0 0 0 20px;
 }
-
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .date-p-revers {
+  .date-p__revers {
     padding: 0 20px 0 0px;
   }
 }
@@ -289,6 +323,11 @@ address {
   padding-bottom: 24px;
   width: 243px;
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .article-card-slider {
+    display: none;
+  }
+}
 
 .swiper-cube .swiper-cube-shadow:before {
   content: "";
@@ -300,6 +339,30 @@ address {
   right: 0;
   -webkit-filter: blur(50px);
           filter: blur(50px);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .no-slider {
+    padding: 16px 0 50px 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .article-card-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .article-card-item {
+    max-width: 240px;
+    margin-right: 17px;
+  }
+  .article-card-item:last-child {
+    margin-right: 0;
+  }
 }
 
 .subscription {
