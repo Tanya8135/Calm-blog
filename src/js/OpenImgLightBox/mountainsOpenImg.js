@@ -4,6 +4,12 @@ import { galleryItems } from '../gallery/galleryMountains'
 import 'simplelightbox/dist/simple-lightbox.min.css';
 import simpleLightbox from 'simplelightbox';
 
+// const galleryImages = document.querySelector('.gallery__image');
+// galleryImages.forEach(image => {
+//   image.style.width = '1440px';
+//   image.style.height = 'auto';
+// })
+
 const link = document.querySelector('.link')
 link.addEventListener('click', function (evt) {
   evt.preventDefault();

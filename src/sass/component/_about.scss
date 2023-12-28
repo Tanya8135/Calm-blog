@@ -1,9 +1,17 @@
 .about {
+  @include tablet {
+    padding: 0 131px;
+  }
+
   background-color: $section-bg-fon;
   padding: 0 20px 8px 20px;
 }
 
 .about-container {
+  @include tablet {
+    padding-top: 50px;
+  }
+
   @include mobile {
     max-width: 280px;
   }
@@ -13,12 +21,39 @@
   margin: 0 auto;
 }
 
+.about-box {
+  display: flex;
+}
+
 .about-card-img {
-  padding: 0 0 32px 0;
+  @include tablet {
+    max-width: 505px;
+    background-color: $accent-clr;
+  }
+
+  @include desktop {
+    max-width: 507px;
+  }
+
+  margin: 0 0 32px 0;
+}
+
+.about-card-text {
+  padding-left: 20px;
 }
 
 .article-card {
   padding-bottom: 32px;
+}
+
+.article-list {
+  @include tablet {
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .card-box {
@@ -31,6 +66,9 @@
 }
 
 .type-card {
+  @include tablet {
+    padding-top: 16px;
+  }
   @include font(12px, 1);
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
@@ -65,12 +103,19 @@
 }
 
 .card-description {
+  @include tablet {
+    width: auto;
+  }
+  letter-spacing: 0.03em;
   width: 280px;
 }
 
 .date {
+  @include tablet {
+    padding: 12px 0 6px 0;
+  }
   @include font(11px, 1.5);
-  padding: 20px 0 0 0;
+  padding: 20px 0 6px 0;
 }
 
 .date-p {

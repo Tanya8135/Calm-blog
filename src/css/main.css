@@ -93,11 +93,21 @@ address {
   background-color: #ededed;
   padding: 0 20px 8px 20px;
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .about {
+    padding: 0 131px;
+  }
+}
 
 .about-container {
   width: 100%;
   padding-top: 32px;
   margin: 0 auto;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .about-container {
+    padding-top: 50px;
+  }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .about-container {
@@ -105,12 +115,42 @@ address {
   }
 }
 
+.about-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .about-card-img {
-  padding: 0 0 32px 0;
+  margin: 0 0 32px 0;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .about-card-img {
+    max-width: 505px;
+    background-color: #ffffff;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+  .about-card-img {
+    max-width: 507px;
+  }
+}
+
+.about-card-text {
+  padding-left: 20px;
 }
 
 .article-card {
   padding-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .article-list {
+    margin-right: 20px;
+  }
+  .article-list:last-child {
+    margin-right: 0;
+  }
 }
 
 .card-box {
@@ -130,6 +170,11 @@ address {
   letter-spacing: 2px;
   color: #353732;
   padding: 20px 0 12px 0;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .type-card {
+    padding-top: 16px;
+  }
 }
 
 .type-card-p {
@@ -162,13 +207,24 @@ address {
 }
 
 .card-description {
+  letter-spacing: 0.03em;
   width: 280px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .card-description {
+    width: auto;
+  }
 }
 
 .date {
   font-size: 11px;
   line-height: 1.5;
-  padding: 20px 0 0 0;
+  padding: 20px 0 6px 0;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .date {
+    padding: 12px 0 6px 0;
+  }
 }
 
 .date-p {
@@ -423,7 +479,7 @@ address {
     display: none;
   }
 }
-@media screen and (min-width: 1023px) and (max-width: 1920) {
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
   .mobile-menu__box {
     display: none;
   }
@@ -453,7 +509,7 @@ address {
     display: none;
   }
 }
-@media screen and (min-width: 1023px) and (max-width: 1920) {
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
   .menu-toggle {
     display: none;
   }
