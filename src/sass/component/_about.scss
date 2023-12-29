@@ -30,8 +30,10 @@
 }
 
 .about-box {
-  display: flex;
-  padding-top: 62px;
+  @include tablet {
+    display: flex;
+    padding-top: 62px;
+  }
 }
 
 .about-card-img {
@@ -205,6 +207,7 @@
 }
 
 .no-slider {
+  display: none;
   @include tablet {
     padding: 16px 0 50px 0;
   }

@@ -141,11 +141,13 @@ address {
   }
 }
 
-.about-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 62px;
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .about-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 62px;
+  }
 }
 
 .about-card-img {
@@ -341,6 +343,9 @@ address {
           filter: blur(50px);
 }
 
+.no-slider {
+  display: none;
+}
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .no-slider {
     padding: 16px 0 50px 0;
@@ -372,6 +377,11 @@ address {
   max-width: 280px;
   margin: 0 auto;
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .subscription {
+    max-width: 376px;
+  }
+}
 
 .subtitle-subscr {
   font-size: 26px;
@@ -383,9 +393,19 @@ address {
           columns: #353732;
   margin: 0;
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .subtitle-subscr {
+    font-size: 28px;
+  }
+}
 
 .text-subscr {
   padding-bottom: 32px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .text-subscr {
+    font-size: 16px;
+  }
 }
 
 .subscr-form {
@@ -397,6 +417,11 @@ address {
   color: #353732;
   padding-top: 32px;
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .subscr-form {
+    max-width: 376px;
+  }
+}
 
 .data-field {
   display: block;
@@ -404,6 +429,11 @@ address {
   max-width: 280px;
   margin: 0 auto;
   margin-bottom: 44px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .data-field {
+    max-width: 376px;
+  }
 }
 
 .data-input {
@@ -417,6 +447,12 @@ address {
   border-radius: 8px;
   padding-left: 10px;
   color: #353732;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .data-input {
+    min-width: 376px;
+    min-height: 38px;
+  }
 }
 .data-input:focus {
   outline: none;
