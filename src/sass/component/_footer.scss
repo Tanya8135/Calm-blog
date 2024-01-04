@@ -1,4 +1,7 @@
 .footer {
+  @include tablet {
+    padding: 52px 137px;
+  }
   @include mobile {
     max-width: 320px;
     padding: 62px 20px 32px 20px;
@@ -16,6 +19,8 @@
 }
 
 .nav-footer-item {
+  @include font(13px, 1.5);
+
   margin-right: 20px;
   padding-bottom: 20px;
 

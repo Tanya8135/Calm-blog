@@ -14,3 +14,9 @@
   border: none;
   cursor: none;
 }
+
+.logo-s {
+  @include tablet {
+    min-width: 78px;
+  }
+}

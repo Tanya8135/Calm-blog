@@ -3,6 +3,10 @@
 }
 
 .hero-logo {
+  @include tablet {
+    min-width: 94px;
+    min-height: 48px;
+  }
   min-width: 84px;
   min-height: 42px;
 }
