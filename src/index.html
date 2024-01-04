@@ -20,6 +20,7 @@
     />
   </head>
   <body>
+    <!-- HEADER -->
     <header class="header">
       <div class="header-container">
         <div class="logo">
@@ -27,6 +28,19 @@
             <img src="./images/LogoCalm.svg" alt="logo" class="logo-s" />
           </a>
         </div>
+
+        <nav class="header-list">
+          <li class="header-item">
+            <a href="#about" class="header-link">About</a>
+          </li>
+          <li class="header-item">
+            <a href="#subscription" class="header-link">Subscription</a>
+          </li>
+          <li class="header-item">
+            <a href="#archive" class="header-link">Archive</a>
+          </li>
+        </nav>
+
         <!-- BTN open -->
         <button
           type="button"
@@ -81,7 +95,7 @@
       </section>
 
       <!-- ABOUT -->
-      <section class="about">
+      <section class="about" id="about">
         <!-- SimpleLightBox -->
         <ul class="gallery hidden"></ul>
 
@@ -209,6 +223,12 @@
                     The best pen I've ever used
                   </h4>
                   <p class="date-p">November 24, 2021</p>
+
+                  <div class="swipe">
+                    <svg width="52" height="52" class="shadow-arrow">
+                      <use href="./images/icons.svg#icon-swipe"></use>
+                    </svg>
+                  </div>
                 </div>
               </article>
             </div>
@@ -309,7 +329,7 @@
       </section>
 
       <!-- SUBSCRIPTION -->
-      <section class="subscription">
+      <section class="subscription" id="subscription">
         <p class="subtitle-subscr"><b>Stay in the know.</b></p>
         <p class="text-subscr">
           Sign-up to my newsletter to get an update whenever I post a new
@@ -340,7 +360,7 @@
       </section>
 
       <!-- ARCHIVE -->
-      <section class="archive">
+      <section class="archive" id="archive">
         <div class="archive-container">
           <ul class="archive-list">
             <li class="archive-item">

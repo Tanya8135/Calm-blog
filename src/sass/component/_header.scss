@@ -1,4 +1,7 @@
 .header-container {
+  @include tablet {
+    padding: 20px 52px;
+  }
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,5 +24,28 @@
 .logo-s {
   @include tablet {
     min-width: 78px;
+  }
+}
+
+.header-list {
+  @include tablet {
+    display: flex;
+  }
+  display: none;
+}
+
+.header-item {
+  @include tablet {
+    margin-right: 32px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.header-link {
+  @include tablet {
+    @include font(16px, 1.1);
   }
 }
