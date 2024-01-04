@@ -232,6 +232,9 @@
 }
 
 .swipe {
+  @include tablet {
+    display: none;
+  }
   position: absolute;
   bottom: 0px;
   right: 5px;
@@ -241,6 +244,7 @@
   animation-name: attenuation;
   animation-duration: 1000ms;
   animation-iteration-count: 3;
+  
   // animation-iteration-count: infinite; - безкінечна анімація
 }
 

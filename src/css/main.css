@@ -445,6 +445,11 @@ address {
   -webkit-animation-iteration-count: 3;
           animation-iteration-count: 3;
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .swipe {
+    display: none;
+  }
+}
 
 @-webkit-keyframes attenuation {
   0% {
