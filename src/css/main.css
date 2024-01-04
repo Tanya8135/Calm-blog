@@ -498,15 +498,31 @@ address {
   padding: 0 20px;
   background-color: #ededed;
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .archive {
+    padding: 0 45px;
+  }
+}
 
 .archive-container {
   width: 100%;
   padding-top: 38px;
   margin: 0 auto;
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .archive-container {
+    padding-top: 62px;
+  }
+}
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .archive-container {
     max-width: 280px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .archive-box-content {
+    margin-left: 32px;
   }
 }
 
@@ -516,9 +532,28 @@ address {
 .archive-card-img__noImg {
   padding: 0 0 44px 0;
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .archive-card-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 62px;
+  }
+  .archive-card-img__last {
+    padding-bottom: 32px;
+  }
+  .archive-card-img__noImg {
+    padding-bottom: 52px;
+  }
+}
 
 .archive-img {
   border-radius: 10px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .archive-img {
+    max-width: 200px;
+  }
 }
 
 .archive-title {
@@ -526,6 +561,11 @@ address {
   line-height: 1.6;
   font-weight: 200;
   padding: 12px 0 4px 0;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .archive-title {
+    padding-top: 0;
+  }
 }
 .archive-title__noImg {
   padding: 0px 0 4px 0;

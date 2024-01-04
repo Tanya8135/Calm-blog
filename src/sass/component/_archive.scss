@@ -1,9 +1,15 @@
 .archive {
+  @include tablet {
+    padding: 0 45px;
+  }
   padding: 0 20px;
   background-color: $section-bg-fon;
 }
 
 .archive-container {
+  @include tablet {
+    padding-top: 62px;
+  }
   @include mobile {
     max-width: 280px;
   }
@@ -13,19 +19,43 @@
   margin: 0 auto;
 }
 
+.archive-box-content {
+  @include tablet {
+    margin-left: 32px;
+  }
+}
+
 .archive-card-img {
   padding: 0 0 52px 0;
 
   &__noImg {
     padding: 0 0 44px 0;
   }
+
+  @include tablet {
+    display: flex;
+    padding-bottom: 62px;
+
+    &__last {
+      padding-bottom: 32px;
+    }
+    &__noImg {
+      padding-bottom: 52px;
+    }
+  }
 }
 
 .archive-img {
+  @include tablet {
+    max-width: 200px;
+  }
   border-radius: 10px;
 }
 
 .archive-title {
+  @include tablet {
+    padding-top: 0;
+  }
   @include font(17px, 1.6);
   font-weight: 200;
   padding: 12px 0 4px 0;
