@@ -7,6 +7,9 @@
 }
 
 .burger-menu {
+  @include tablet {
+    display: none;
+  }
   fill: $logo-fill;
   max-height: 32px;
   background-color: transparent;
