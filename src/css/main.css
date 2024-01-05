@@ -385,11 +385,6 @@ address {
   padding-bottom: 24px;
   width: 243px;
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .article-card-slider {
-    display: none;
-  }
-}
 
 .swiper-cube .swiper-cube-shadow:before {
   content: "";
@@ -403,12 +398,9 @@ address {
           filter: blur(50px);
 }
 
-.no-slider {
-  display: none;
-}
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .no-slider {
-    padding: 16px 0 50px 0;
+    padding: 32px 0 50px 0;
   }
 }
 
@@ -430,91 +422,6 @@ address {
   }
 }
 
-.swipe {
-  position: absolute;
-  bottom: 0px;
-  right: 5px;
-  -webkit-transform: rotate(15deg);
-          transform: rotate(15deg);
-  overflow: hidden;
-  fill: #b8b8b8;
-  -webkit-animation-name: attenuation;
-          animation-name: attenuation;
-  -webkit-animation-duration: 1000ms;
-          animation-duration: 1000ms;
-  -webkit-animation-iteration-count: 3;
-          animation-iteration-count: 3;
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .swipe {
-    display: none;
-  }
-}
-
-@-webkit-keyframes attenuation {
-  0% {
-    fill: #b8b8b8;
-  }
-  50% {
-    fill: #e5e5e5;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    fill: #b8b8b8;
-  }
-}
-
-@keyframes attenuation {
-  0% {
-    fill: #b8b8b8;
-  }
-  50% {
-    fill: #e5e5e5;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    fill: #b8b8b8;
-  }
-}
-.swipe:hover,
-.swipe:active {
-  -webkit-animation-name: attenuation1;
-          animation-name: attenuation1;
-  -webkit-animation-duration: 1000ms;
-          animation-duration: 1000ms;
-  -webkit-animation-iteration-count: 3;
-          animation-iteration-count: 3;
-}
-
-@-webkit-keyframes attenuation1 {
-  0% {
-    fill: #b8b8b8;
-  }
-  50% {
-    fill: #e5e5e5;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    fill: #b8b8b8;
-  }
-}
-
-@keyframes attenuation1 {
-  0% {
-    fill: #b8b8b8;
-  }
-  50% {
-    fill: #e5e5e5;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    fill: #b8b8b8;
-  }
-}
 .subscription {
   position: relative;
   background-color: #f2f2f2;
@@ -911,6 +818,91 @@ address {
   margin-bottom: 0;
 }
 
+.swipe {
+  position: absolute;
+  bottom: 0px;
+  right: 5px;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+  overflow: hidden;
+  fill: #b8b8b8;
+  -webkit-animation-name: attenuation;
+          animation-name: attenuation;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .swipe {
+    display: none;
+  }
+}
+
+@-webkit-keyframes attenuation {
+  0% {
+    fill: #b8b8b8;
+  }
+  50% {
+    fill: #e5e5e5;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    fill: #b8b8b8;
+  }
+}
+
+@keyframes attenuation {
+  0% {
+    fill: #b8b8b8;
+  }
+  50% {
+    fill: #e5e5e5;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    fill: #b8b8b8;
+  }
+}
+.swipe:hover,
+.swipe:active {
+  -webkit-animation-name: attenuation1;
+          animation-name: attenuation1;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+}
+
+@-webkit-keyframes attenuation1 {
+  0% {
+    fill: #b8b8b8;
+  }
+  50% {
+    fill: #e5e5e5;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    fill: #b8b8b8;
+  }
+}
+
+@keyframes attenuation1 {
+  0% {
+    fill: #b8b8b8;
+  }
+  50% {
+    fill: #e5e5e5;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    fill: #b8b8b8;
+  }
+}
 :root {
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --animation-duration: 250ms;
