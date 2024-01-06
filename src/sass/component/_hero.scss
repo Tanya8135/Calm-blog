@@ -2,11 +2,16 @@
   @include tablet {
     padding: 76px 106px 52px 76px;
   }
+
+  @include desktop {
+    padding: 100px 447px 100px 336px;
+  }
+
   padding: 52px 20px 32px 20px;
 }
 
 .hero-logo {
-  @include tablet {
+  @include tabletMin {
     min-width: 94px;
     min-height: 48px;
   }
@@ -18,6 +23,11 @@
   @include tablet {
     font-size: 32px;
   }
+
+  @include desktop {
+    @include font(36px, 1.4);
+  }
+
   @include font(23px, 1.7);
   font-weight: 200;
   color: $secondary-clr-t;
