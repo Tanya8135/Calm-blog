@@ -1,5 +1,5 @@
 .about {
-  @include tablet {
+  @include tabletMin {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,9 +71,16 @@
     background-color: transparent;
     max-width: 710px;
   }
+
+  @include desktop {
+    width: 374px;
+  }
 }
 
 .revers {
+  @include desktop {
+    margin-top: 0;
+  }
   flex-direction: row-reverse;
   margin-top: 32px;
 }
@@ -119,6 +126,10 @@
 
   @include desktop {
     min-height: 121px;
+
+    &__d {
+      min-height: 140px;
+    }
   }
 
   position: relative;
@@ -234,9 +245,32 @@
   padding: 0 0 0 20px;
 }
 
+.about-card-list {
+  @include tablet {
+    padding: 32px 0 50px 0;
+  }
+
+  @include desktop {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    padding-bottom: 16px;
+  }
+}
+
+.about-card-item {
+  @include desktop {
+    margin-left: 20px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
 // SLIDER
 .slider {
-  @include tablet {
+  @include tabletMin {
     display: none;
   }
 
@@ -264,23 +298,31 @@
   filter: blur(50px);
 }
 
+// NO SLIDER
 .no-slider {
-  // display: none;
-  @include tablet {
-    padding: 32px 0 50px 0;
+  display: none;
+  @include tabletMin {
+    display: block;
+    margin: 0 auto;
+    // padding: 32px 0 50px 0;
   }
 }
 
 .article-card-list {
-  @include tablet {
+  @include tabletMin {
     display: flex;
+    padding-bottom: 50px;
+  }
+
+  @include desktop {
+    padding-bottom: 100px;
   }
 }
 
 .article-card-item {
-  @include tablet {
+  @include tabletMin {
     max-width: 240px;
-    margin-right: 17px;
+    margin-right: 20px;
 
     &:last-child {
       margin-right: 0;

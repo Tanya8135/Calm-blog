@@ -44,12 +44,15 @@
 }
 
 .header-item {
+  @include tablet {
+    margin-right: 32px;
+  }
+
   @include desktop {
     margin-right: 52px;
-
-    &:last-child {
-      margin-right: 0;
-    }
+  }
+  &:last-child {
+    margin-right: 0;
   }
 }
 
