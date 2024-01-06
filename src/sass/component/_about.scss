@@ -20,6 +20,13 @@
     align-items: center;
   }
 
+  @include desktop {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 16px;
+  }
+
   @include mobile {
     max-width: 280px;
   }
@@ -34,6 +41,10 @@
     display: flex;
     padding-top: 62px;
   }
+
+  @include desktop {
+    margin-left: 16px;
+  }
 }
 
 .about-card-img {
@@ -45,6 +56,10 @@
 
   @include desktop {
     max-width: 507px;
+    background-color: $accent-clr;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 0;
   }
 
   margin: 0 0 32px 0;
@@ -64,10 +79,18 @@
 }
 
 .about-card-text {
+  @include desktop {
+    padding-left: 15px;
+  }
+
   padding-left: 20px;
 }
 
 .article-card {
+  @include desktop {
+    padding-bottom: 0;
+  }
+
   padding-bottom: 32px;
 }
 
@@ -79,11 +102,23 @@
       margin-right: 0;
     }
   }
+
+  @include desktop {
+    padding-bottom: 16px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
 }
 
 .card-box {
   @include tablet {
     height: 146px;
+  }
+
+  @include desktop {
+    min-height: 121px;
   }
 
   position: relative;
@@ -116,6 +151,10 @@
     }
   }
 
+  @include desktop {
+    font-size: 16px;
+  }
+
   @include font(12px, 1);
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
@@ -134,6 +173,12 @@
       padding: 12px 20px 12px 0;
     }
   }
+
+  @include desktop {
+    // padding-bottom: 16px;
+    font-size: 20px;
+  }
+
   @include font(16px, 1.4);
   font-weight: 200;
   padding: 12px 0 8px 20px;
@@ -152,8 +197,13 @@
 }
 
 .card-description {
-  @include tablet {
+  @include tabletMin {
     width: auto;
+  }
+
+  @include desktop {
+    @include font(16px, 1.4);
+    padding-right: 5px;
   }
   letter-spacing: 0.05em;
   width: 280px;
@@ -162,6 +212,9 @@
 .date {
   @include tablet {
     padding: 12px 0 6px 0;
+  }
+  @include desktop {
+    padding-top: 40px;
   }
   @include font(11px, 1.5);
   padding: 20px 0 6px 0;
@@ -172,6 +225,10 @@
     &__revers {
       padding: 0 20px 0 0px;
     }
+  }
+
+  @include desktop {
+    font-size: 12px;
   }
   @include font(11px, 1.5);
   padding: 0 0 0 20px;

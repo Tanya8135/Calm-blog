@@ -1,10 +1,20 @@
+.hero {
+  @include desktop {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0px 100px 0px;
+    transform: translateX(-52px);
+  }
+}
+
 .hero-container {
   @include tablet {
     padding: 76px 106px 52px 76px;
   }
 
   @include desktop {
-    padding: 100px 447px 100px 336px;
+    padding: 0;
+    max-width: 700px;
   }
 
   padding: 52px 20px 32px 20px;
