@@ -603,6 +603,14 @@ address {
     max-width: 376px;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+  .subscription {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-width: 768px;
+  }
+}
 
 .subtitle-subscr {
   font-size: 26px;
@@ -614,7 +622,7 @@ address {
           columns: #353732;
   margin: 0;
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1920px) {
   .subtitle-subscr {
     font-size: 28px;
   }
@@ -626,6 +634,11 @@ address {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .text-subscr {
     font-size: 16px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+  .text-subscr {
+    font-size: 18px;
   }
 }
 
@@ -700,6 +713,12 @@ address {
   top: -55%;
   left: 3px;
 }
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+  .data-text {
+    top: -65%;
+    left: 11px;
+  }
+}
 
 .btn-subscr {
   position: absolute;
@@ -713,6 +732,14 @@ address {
   color: #ffffff;
   outline: none;
   border: none;
+}
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+  .btn-subscr {
+    position: relative;
+    bottom: 20px;
+    left: 0;
+    cursor: pointer;
+  }
 }
 
 .archive {

@@ -3,6 +3,11 @@
     max-width: 376px;
   }
 
+  @include desktop {
+    display: flex;
+    min-width: 768px;
+  }
+
   position: relative;
   background-color: $primary-bg-fon;
   padding: 62px 0 62px 0;
@@ -11,7 +16,7 @@
 }
 
 .subtitle-subscr {
-  @include tablet {
+  @include tabletMin {
     font-size: 28px;
   }
 
@@ -25,6 +30,10 @@
 .text-subscr {
   @include tablet {
     font-size: 16px;
+  }
+
+  @include desktop {
+    font-size: 18px;
   }
 
   padding-bottom: 32px;
@@ -83,12 +92,23 @@
 }
 
 .data-text {
+  @include desktop {
+    top: -65%;
+    left: 11px;
+  }
   position: absolute;
   top: -55%;
   left: 3px;
 }
 
 .btn-subscr {
+  @include desktop {
+    position: relative;
+    bottom: 20px;
+    left: 0;
+    cursor: pointer;
+  }
+
   position: absolute;
   line-height: 1.9;
   letter-spacing: 0.5em;
