@@ -4,7 +4,7 @@
 import listArchive from './item';
 
 const archiveBtn = document.querySelector('.archive-btn');
-const archiveList = document.querySelector('.archive-list');
+const archiveList = document.querySelector('.archive-list-loadMore');
 
 // Додати обробник подій для кнопки
 archiveBtn.addEventListener('click', function () {

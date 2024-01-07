@@ -746,7 +746,7 @@ address {
   padding: 0 20px;
   background-color: #ededed;
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1920px) {
   .archive {
     padding: 0 45px;
   }
@@ -757,7 +757,7 @@ address {
   padding-top: 38px;
   margin: 0 auto;
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1920px) {
   .archive-container {
     padding-top: 62px;
   }
@@ -767,8 +767,13 @@ address {
     max-width: 280px;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+  .archive-container {
+    width: 760px;
+  }
+}
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1920px) {
   .archive-box-content {
     margin-left: 32px;
   }
@@ -780,7 +785,7 @@ address {
 .archive-card-img__noImg {
   padding: 0 0 44px 0;
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1920px) {
   .archive-card-img {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -792,16 +797,21 @@ address {
   }
   .archive-card-img__noImg {
     padding-bottom: 52px;
+    margin-left: -32px;
   }
 }
 
 .archive-img {
   border-radius: 10px;
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1920px) {
   .archive-img {
     max-width: 200px;
   }
+}
+
+.archive-imgRad {
+  border-radius: 10px;
 }
 
 .archive-title {
@@ -810,7 +820,7 @@ address {
   font-weight: 200;
   padding: 12px 0 4px 0;
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1920px) {
   .archive-title {
     padding-top: 0;
   }

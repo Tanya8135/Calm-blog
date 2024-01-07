@@ -14,7 +14,7 @@ const listArchive = `
     </div>
   </article>
 
-  <article class="archive-card-img">
+  <article class="archive-card-img archive-card-img__noImg">
   <div class="archive-box-content">
                 <h2 hidden></h2>
                 <h3 class="archive-title archive-title__noImg">
@@ -29,7 +29,7 @@ const listArchive = `
                 </div>
               </article>
 
-              <article class="archive-card-img archive-card-img__noImg">
+              <article class="archive-card-img ">
                 <img
                   srcset="./images/mob_320/camera@2_280.png 2x"
                   sizes="(max-width: 320px) 280px, 100vw"
@@ -48,12 +48,13 @@ const listArchive = `
                 </div>
               </article>
 
-              <article class="archive-card-img archive-card-img__noImg">
+              <article class="archive-card-img">
                 <img
                   srcset="./images/mob_320/drone@2_280.png 2x"
                   sizes="(max-width: 320px) 280px, 100vw"
                   src="./images/mob_320/drone_280.png"
                   alt="Drone"
+                  class="archive-imgRad"
                 />
                 <div class="archive-box-content">
                 <h2 hidden></h2>
@@ -75,6 +76,7 @@ const listArchive = `
                   sizes="(max-width: 320px) 280px, 100vw"
                   src="./images/mob_320/coffe_280.png"
                   alt="Coffe"
+class="archive-imgRad"
                 />
                 <div class="archive-box-content">
                 <h2 hidden></h2>
@@ -105,7 +107,7 @@ const listArchive = `
               </div>
             </article>
 
-            <article class="archive-card-img archive-card-img__last">
+            <article class="archive-card-img archive-card-img__noImg">
             <div class="archive-box-content">
                 <h2 hidden></h2>
                 <h3 class="archive-title archive-title__noImg">
