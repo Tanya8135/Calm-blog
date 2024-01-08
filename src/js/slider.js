@@ -12,4 +12,6 @@ document.addEventListener('DOMContentLoaded', function () {
             shadowScale: 0.94,
         },
     });
+    // swiper();
 });
+

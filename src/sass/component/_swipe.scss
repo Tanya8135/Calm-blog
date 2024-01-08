@@ -1,0 +1,54 @@
+.swipe {
+    @include tablet {
+      display: none;
+    }
+    position: absolute;
+    bottom: 0px;
+    right: 5px;
+    transform: rotate(15deg);
+    overflow: hidden;
+    fill: $icon-swipe;
+    animation-name: attenuation;
+    animation-duration: 1000ms;
+    animation-iteration-count: 3;
+    
+    // animation-iteration-count: infinite; - безкінечна анімація
+  }
+  
+  @keyframes attenuation {
+    0% {
+      fill: $icon-swipe;
+    }
+  
+    50% {
+      fill: #e5e5e5;
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      fill: $icon-swipe;
+    }
+  }
+  
+  .swipe:hover,
+  .swipe:active {
+    animation-name: attenuation1;
+    animation-duration: 1000ms;
+    animation-iteration-count: 3;
+  }
+  
+  @keyframes attenuation1 {
+    0% {
+      fill: $icon-swipe;
+    }
+  
+    50% {
+      fill: #e5e5e5;
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      fill: $icon-swipe;
+    }
+  }
+  

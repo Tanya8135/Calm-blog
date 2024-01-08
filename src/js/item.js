@@ -1,5 +1,6 @@
 const listArchive = `
 <article class="archive-card-img archive-card-img__noImg">
+<div class="archive-box-content">
     <h2 hidden></h2>
     <h3 class="archive-title archive-title__noImg">
       Meditation apps I use
@@ -10,9 +11,11 @@ const listArchive = `
       facere perferendis.
     </p>
     <p class="date-a">November 24, 2021</p>
+    </div>
   </article>
 
-  <article class="archive-card-img archive-card-img__noImg--last">
+  <article class="archive-card-img archive-card-img__noImg">
+  <div class="archive-box-content">
                 <h2 hidden></h2>
                 <h3 class="archive-title archive-title__noImg">
                   How much stuff do you actually need?
@@ -23,15 +26,17 @@ const listArchive = `
                   animi exercitationem sint voluptas tenetur ut.
                 </p>
                 <p class="date-a">November 24, 2021</p>
+                </div>
               </article>
 
-              <article class="archive-card-img archive-card-img__noImg">
+              <article class="archive-card-img ">
                 <img
                   srcset="./images/mob_320/camera@2_280.png 2x"
                   sizes="(max-width: 320px) 280px, 100vw"
                   src="./images/mob_320/camera_280.png"
                   alt="Camera"
                 />
+                <div class="archive-box-content">
                 <h2 hidden></h2>
                 <h3 class="archive-title">The move to mirrorless cameras</h3>
                 <p class="card-description">
@@ -40,15 +45,18 @@ const listArchive = `
                   esse veniam.
                 </p>
                 <p class="date-a">November 24, 2021</p>
+                </div>
               </article>
 
-              <article class="archive-card-img archive-card-img__noImg">
+              <article class="archive-card-img">
                 <img
                   srcset="./images/mob_320/drone@2_280.png 2x"
                   sizes="(max-width: 320px) 280px, 100vw"
                   src="./images/mob_320/drone_280.png"
                   alt="Drone"
+                  class="archive-imgRad"
                 />
+                <div class="archive-box-content">
                 <h2 hidden></h2>
                 <h3 class="archive-title">
                   Drone photography on a space budget
@@ -59,15 +67,18 @@ const listArchive = `
                   maiores odit voluptatib.
                 </p>
                 <p class="date-a">November 24, 2021</p>
+                </div>
               </article>
 
-              <article class="archive-card-img archive-card-img__noImg--last">
+              <article class="archive-card-img archive-card-img__last">
                 <img
                   srcset="./images/mob_320/coffe@2_280.png 2x"
                   sizes="(max-width: 320px) 280px, 100vw"
                   src="./images/mob_320/coffe_280.png"
                   alt="Coffe"
+class="archive-imgRad"
                 />
+                <div class="archive-box-content">
                 <h2 hidden></h2>
                 <h3 class="archive-title">
                   How to make the perfect cup of coffee
@@ -77,9 +88,11 @@ const listArchive = `
                   Ea rerum illo assumenda delectus ipsum dolores nam.
                 </p>
                 <p class="date-a">November 24, 2021</p>
+                </div>
               </article>
 
               <article class="archive-card-img archive-card-img__noImg">
+              <div class="archive-box-content">
               <h2 hidden></h2>
               <h3 class="archive-title archive-title__noImg">
                 Decision fatigue & minimalism
@@ -91,9 +104,11 @@ const listArchive = `
                 voluptatem eum perferendis vitae.
               </p>
               <p class="date-a">November 24, 2021</p>
+              </div>
             </article>
 
-            <article class="archive-card-img archive-card-img__noImg--last">
+            <article class="archive-card-img archive-card-img__noImg">
+            <div class="archive-box-content">
                 <h2 hidden></h2>
                 <h3 class="archive-title archive-title__noImg">
                   Minimal interior design
@@ -104,15 +119,17 @@ const listArchive = `
                   rerum delectus. Hic cum eum voluptas.
                 </p>
                 <p class="date-a">November 24, 2021</p>
+                </div>
               </article>
 
-              <article class="archive-card-img archive-card-img__noImg--last">
+              <article class="archive-card-img archive-card-img__last">
                 <img
                   srcset="./images/mob_320/pen@2_280.png 2x"
                   sizes="(max-width: 320px) 280px, 100vw"
                   src="./images/mob_320/pen_280.png"
                   alt="Pen"
                 />
+                <div class="archive-box-content">
                 <h2 hidden></h2>
                 <h3 class="archive-title">The best pen I've ever used</h3>
                 <p class="card-description">
@@ -122,9 +139,11 @@ const listArchive = `
                   corrupti quasi. Ut omnis reprehenderi.
                 </p>
                 <p class="date-a">November 24, 2021</p>
+                </div>
               </article>
 
               <article class="archive-card-img archive-card-img__noImg">
+              <div class="archive-box-content">
                 <h2 hidden></h2>
                 <h3 class="archive-title archive-title__noImg">
                   Best travel tripods
@@ -134,9 +153,11 @@ const listArchive = `
                   arc.
                 </p>
                 <p class="date-a">November 24, 2021</p>
+                </div>
               </article>
 
               <article class="archive-card-img archive-card-img__noImg">
+              <div class="archive-box-content">
               <h2 hidden></h2>
               <h3 class="archive-title archive-title__noImg">
                 EDC must-haves
@@ -148,9 +169,11 @@ const listArchive = `
                 suscipit unde aliq.
               </p>
               <p class="date-a">November 24, 2021</p>
+              </div>
             </article>
 
             <article class="archive-card-img archive-card-img__noImg">
+            <div class="archive-box-content">
                 <h2 hidden></h2>
                 <h3 class="archive-title archive-title__noImg">
                   Journals & how to use them
@@ -160,9 +183,11 @@ const listArchive = `
                   voluptatibus et voluptatum sed.
                 </p>
                 <p class="date-a">November 24, 2021</p>
+                </div>
               </article>
 
               <article class="archive-card-img archive-card-img__noImg">
+              <div class="archive-box-content">
                 <h2 hidden></h2>
                 <h3 class="archive-title archive-title__noImg">
                   Minimalism in the workplace?
@@ -173,9 +198,11 @@ const listArchive = `
                   asperiores odit in tempore nisi qui. Sit ut aut ipsa.
                 </p>
                 <p class="date-a">November 24, 2021</p>
+                </div>
               </article>
 
               <article class="archive-card-img archive-card-img__noImg">
+              <div class="archive-box-content">
               <h2 hidden></h2>
               <h3 class="archive-title archive-title__noImg">
                 How I structure my work
@@ -187,15 +214,17 @@ const listArchive = `
                 nihil placeat dolor non laborum iusto.
               </p>
               <p class="date-a">November 24, 2021</p>
+              </div>
             </article>
 
-            <article class="archive-card-img">
+            <article class="archive-card-img archive-card-img__last">
                 <img
                   srcset="./images/mob_320/traver@2_280.png 2x"
                   sizes="(max-width: 320px) 280px, 100vw"
                   src="./images/mob_320/traver_280.png"
                   alt="Travel"
                 />
+                <div class="archive-box-content">
                 <h2 hidden></h2>
                 <h3 class="archive-title">Tech-focused travel backpack</h3>
                 <p class="card-description">
@@ -205,6 +234,7 @@ const listArchive = `
                   aut porro id. Tempore sed.
                 </p>
                 <p class="date-a">November 24, 2021</p>
+                </div>
               </article>
 `
 

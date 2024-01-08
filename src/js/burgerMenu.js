@@ -22,10 +22,19 @@ import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
     closeMenuBtn.addEventListener('click', toggleMenu);
 
     // Close the mobile menu on wider screens if the device orientation changes
-    window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
+    window.addEventListener('change', e => {
         if (!e.matches) return;
         mobileMenu.classList.remove('is-open');
         openMenuBtn.setAttribute('aria-expanded', false);
         bodyScrollLock.enableBodyScroll(document.body);
     });
 })();
+
+/* без matchMedia('(min-width: 767px)'). нету ошибки при респонсе */
+// window.matchMedia('(min-width: 767px)').addEventListener('change', e => {
+//     if (!e.matches) return;
+//     mobileMenu.classList.remove('is-open');
+//     openMenuBtn.setAttribute('aria-expanded', false);
+//     bodyScrollLock.enableBodyScroll(document.body);
+// });
+// })();

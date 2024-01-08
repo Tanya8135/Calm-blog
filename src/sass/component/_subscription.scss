@@ -1,4 +1,13 @@
 .subscription {
+  @include tablet {
+    max-width: 376px;
+  }
+
+  @include desktop {
+    display: flex;
+    min-width: 768px;
+  }
+
   position: relative;
   background-color: $primary-bg-fon;
   padding: 62px 0 62px 0;
@@ -7,6 +16,10 @@
 }
 
 .subtitle-subscr {
+  @include tabletMin {
+    font-size: 28px;
+  }
+
   @include font(26px, 1.3);
   font-weight: 200;
   padding-bottom: 20px;
@@ -15,10 +28,22 @@
 }
 
 .text-subscr {
+  @include tablet {
+    font-size: 16px;
+  }
+
+  @include desktop {
+    font-size: 18px;
+  }
+
   padding-bottom: 32px;
 }
 
 .subscr-form {
+  @include tablet {
+    max-width: 376px;
+  }
+
   position: relative;
   display: block;
   margin: 0 auto;
@@ -29,6 +54,9 @@
 }
 
 .data-field {
+  @include tablet {
+    max-width: 376px;
+  }
   display: block;
   position: relative;
   max-width: 280px;
@@ -37,6 +65,11 @@
 }
 
 .data-input {
+  @include tablet {
+    min-width: 376px;
+    min-height: 38px;
+  }
+
   display: block;
   position: relative;
   font-family: 'Georgia', serif;
@@ -59,12 +92,23 @@
 }
 
 .data-text {
+  @include desktop {
+    top: -65%;
+    left: 11px;
+  }
   position: absolute;
   top: -55%;
   left: 3px;
 }
 
 .btn-subscr {
+  @include desktop {
+    position: relative;
+    bottom: 20px;
+    left: 0;
+    cursor: pointer;
+  }
+
   position: absolute;
   line-height: 1.9;
   letter-spacing: 0.5em;

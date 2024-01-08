@@ -20,13 +20,30 @@
     />
   </head>
   <body>
+    <!-- HEADER -->
     <header class="header">
       <div class="header-container">
         <div class="logo">
           <a href="./index.html">
-            <img src="./images/LogoCalm.svg" alt="logo" />
+            <img src="./images/LogoCalm.svg" alt="logo" class="logo-s" />
           </a>
         </div>
+
+        <nav class="header-list">
+          <li class="header-item">
+            <a href="#info" class="header-link">Info</a>
+          </li>
+          <li class="header-item">
+            <a href="#about" class="header-link">About</a>
+          </li>
+          <li class="header-item">
+            <a href="#subscription" class="header-link">Subscription</a>
+          </li>
+          <li class="header-item">
+            <a href="#archive" class="header-link">Archive</a>
+          </li>
+        </nav>
+
         <!-- BTN open -->
         <button
           type="button"
@@ -81,7 +98,7 @@
       </section>
 
       <!-- ABOUT -->
-      <section class="about">
+      <section class="about" id="about">
         <!-- SimpleLightBox -->
         <ul class="gallery hidden"></ul>
 
@@ -89,188 +106,279 @@
           <article class="about-card-img">
             <a href="" class="link">
               <img
-                srcset="./images/mob_320/mountains@2_280.png 2x"
-                src="./images/mob_320/mountains_280.png"
+                srcset="./images/desk_1440/mountains@2_507.png 2x"
+                src="./images/desk_1440/mountains_507.png"
                 alt="Mountains"
               />
             </a>
-
-            <p class="type-card">Travel</p>
-            <h2 hidden></h2>
-            <h3 class="card-title">Travel spots in Iceland</h3>
-            <p class="card-description">
-              Delectus sint nisi ut recusandae molestiae. Qui iure accusantium
-              esse temporibus et. Aut atque vel labore officiis a dolor et.
-              Molestiae dolor quo eius. Perferendis &#101;rror eveniet sit quia
-              occaecati excepturi nisi prod.
-            </p>
-            <p class="date">November 24, 2021</p>
-          </article>
-
-          <ul class="galleryCl hidden"></ul>
-          <article class="article-card">
-            <a href="" class="linkCl">
-              <img
-                srcset="./images/mob_320/climbing@2_243.png 2x"
-                sizes="(max-width: 320px) 243px, 100vw"
-                src="./images/mob_320/climbing_243.png"
-                alt="Climbing"
-              />
-            </a>
-            <div class="card-box">
-              <p class="type-card-p">Exercise</p>
-              <h4 class="card-title-artcl">Climbing as exercise</h4>
-              <p class="date-p">November 24, 2021</p>
+            <div class="about-card-text">
+              <p class="type-card">Travel</p>
+              <h2 hidden></h2>
+              <h3 class="card-title">Travel spots in Iceland</h3>
+              <p class="card-description">
+                Delectus sint nisi ut recusandae molestiae. Qui iure accusantium
+                esse temporibus et. Aut atque vel labore officiis a dolor et.
+                Molestiae dolor quo eius. Perferendis &#101;rror eveniet sit
+                quia occaecati excepturi nisi prod.
+              </p>
+              <p class="date">November 24, 2021</p>
             </div>
           </article>
 
-          <ul class="galleryCamera hidden"></ul>
-          <article class="article-card">
-            <a href="" class="linkCamera">
-              <img
-                srcset="./images/mob_320/cameras@2_243.png 2x"
-                sizes="(max-width: 320px) 243px, 100vw"
-                src="./images/mob_320/cameras_243.png"
-                alt="Camera"
-              />
-            </a>
-            <div class="card-box">
-              <p class="type-card-p">Tech</p>
-              <h4 class="card-title-artcl">The move to mirrorless cameras</h4>
-              <p class="date-p">November 24, 2021</p>
-            </div>
-          </article>
-
-          <ul class="galleryDrone hidden"></ul>
-          <article class="about-card-img">
-            <a href="" class="linkDrone">
-              <img
-                srcset="./images/mob_320/drone@2_280.png 2x"
-                sizes="(max-width: 320px) 280px, 100vw"
-                src="./images/mob_320/drone_280.png"
-                alt="Drone"
-              />
-            </a>
-
-            <p class="type-card-p">Tech</p>
-            <h4 class="card-title-artcl">
-              Drone photography on a space budget
-            </h4>
-            <p class="date-p">November 24, 2021</p>
-          </article>
-
-          <ul class="galleryCoffee hidden"></ul>
-          <article class="about-card-img">
-            <a href="" class="linkCoffee">
-              <img
-                srcset="./images/mob_320/coffe@2_280.png 2x"
-                sizes="(max-width: 320px) 280px, 100vw"
-                src="./images/mob_320/coffe_280.png"
-                alt="Cofee"
-              />
-            </a>
-
-            <p class="type-card-p">Tutorial</p>
-            <h4 class="card-title-artcl">
-              How to make the perfect cup of coffee
-            </h4>
-            <p class="date-p">November 24, 2021</p>
-          </article>
-          <div class="swiper slider">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <article class="article-card-slider">
+          <ul class="about-box">
+            <li class="article-list">
+              <ul class="galleryCl hidden"></ul>
+              <article class="article-card">
+                <a href="" class="linkCl">
                   <img
-                    srcset="./images/slider_mob/pen@2_243.png 2x"
-                    sizes="(max-width: 320px) 280px, 100vw"
-                    src="./images/slider_mob/pen_243.png"
+                    srcset="./images/mob_320/climbing@2_243.png 2x"
+                    sizes="(max-width: 320px) 243px, 100vw"
+                    src="./images/mob_320/climbing_243.png"
+                    alt="Climbing"
+                  />
+                </a>
+                <div class="card-box">
+                  <p class="type-card-p">Exercise</p>
+                  <h4 class="card-title-artcl">Climbing as exercise</h4>
+                  <p class="date-p">November 24, 2021</p>
+                </div>
+              </article>
+            </li>
+
+            <li class="article-list">
+              <ul class="galleryCamera hidden"></ul>
+              <article class="article-card">
+                <a href="" class="linkCamera">
+                  <img
+                    srcset="./images/mob_320/cameras@2_243.png 2x"
+                    sizes="(max-width: 320px) 243px, 100vw"
+                    src="./images/mob_320/cameras_243.png"
                     alt="Camera"
                   />
-                  <div class="card-box">
-                    <p class="type-card-p">Review</p>
-                    <h4 class="card-title-artcl-sl">
-                      The best pen I've ever used
-                    </h4>
-                    <p class="date-p">November 24, 2021</p>
-                  </div>
-                </article>
+                </a>
+                <div class="card-box">
+                  <p class="type-card-p">Tech</p>
+                  <h4 class="card-title-artcl">
+                    The move to mirrorless cameras
+                  </h4>
+                  <p class="date-p">November 24, 2021</p>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="about-card-list">
+          <li class="about-card-item">
+            <ul class="galleryDrone hidden"></ul>
+            <article class="about-card-img about-card-img-line">
+              <a href="" class="linkDrone">
+                <img
+                  srcset="./images/tablet_768/drone@2_374.png 2x"
+                  src="./images/tablet_768/drone_374.png"
+                  alt="Drone"
+                />
+              </a>
+
+              <div class="card-box-line">
+                <p class="type-card-p">Tech</p>
+                <h4 class="card-title-artcl card-title-artcl-line">
+                  Drone photography on a space budget
+                </h4>
+                <p class="date-p">November 24, 2021</p>
               </div>
-              <div class="swiper-slide">
-                <article class="article-card-slider">
-                  <img
-                    srcset="./images/slider_mob/man_field@2_243.png 2x"
-                    sizes="(max-width: 320px) 280px, 100vw"
-                    src="./images/slider_mob/man_field_243.png"
-                    alt="Man field"
-                  />
-                  <div class="card-box">
-                    <p class="type-card-p">Review</p>
-                    <h4 class="card-title-artcl-sl">
-                      Tech-focused travel backpack
-                    </h4>
-                    <p class="date-p">November 24, 2021</p>
-                  </div>
-                </article>
+            </article>
+          </li>
+          <li class="about-card-item">
+            <ul class="galleryCoffee hidden"></ul>
+            <article class="about-card-img about-card-img-line revers">
+              <a href="" class="linkCoffee">
+                <img
+                  srcset="./images/tablet_768/coffe@2_374.png 2x"
+                  sizes="(max-width: 320px) 280px, 100vw"
+                  src="./images/tablet_768/coffe_374.png"
+                  alt="Coffee"
+                />
+              </a>
+
+              <div class="card-box-line">
+                <p class="type-card-p type-card-p__revers">Tutorial</p>
+                <h4
+                  class="card-title-artcl card-title-artcl__revers card-title-artcl-line"
+                >
+                  How to make the perfect cup of coffee
+                </h4>
+                <p class="date-p date-p__revers">November 24, 2021</p>
               </div>
-              <div class="swiper-slide">
-                <article class="article-card-slider">
-                  <img
-                    srcset="./images/slider_mob/displya@2_243.png 2x"
-                    sizes="(max-width: 320px) 280px, 100vw"
-                    src="./images/slider_mob/displya_243.png"
-                    alt="Man field"
-                  />
-                  <div class="card-box">
-                    <p class="type-card-p">Review</p>
-                    <h4 class="card-title-artcl-sl">
-                      Desk accessories to keep you organized
-                    </h4>
-                    <p class="date-p">November 24, 2021</p>
+            </article>
+          </li>
+        </ul>
+
+        <!-- SLIDER -->
+        <div class="swiper slider test-list">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <article class="article-card-slider">
+                <img
+                  srcset="./images/slider_mob/pen@2_243.png 2x"
+                  sizes="(max-width: 320px) 280px, 100vw"
+                  src="./images/slider_mob/pen_243.png"
+                  alt="Camera"
+                />
+                <div class="card-box">
+                  <p class="type-card-p">Review</p>
+                  <h4 class="card-title-artcl-sl">
+                    The best pen I've ever used
+                  </h4>
+                  <p class="date-p">November 24, 2021</p>
+
+                  <div class="swipe">
+                    <svg width="52" height="52" class="shadow-arrow">
+                      <use href="./images/icons.svg#icon-swipe"></use>
+                    </svg>
                   </div>
-                </article>
-              </div>
-              <div class="swiper-cube-shadow1"></div>
+                </div>
+              </article>
             </div>
+            <div class="swiper-slide">
+              <article class="article-card-slider">
+                <img
+                  srcset="./images/slider_mob/man_field@2_243.png 2x"
+                  sizes="(max-width: 320px) 280px, 100vw"
+                  src="./images/slider_mob/man_field_243.png"
+                  alt="Man field"
+                />
+                <div class="card-box">
+                  <p class="type-card-p">Review</p>
+                  <h4 class="card-title-artcl-sl">
+                    Tech-focused travel backpack
+                  </h4>
+                  <p class="date-p">November 24, 2021</p>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="article-card-slider">
+                <img
+                  srcset="./images/slider_mob/displya@2_243.png 2x"
+                  sizes="(max-width: 320px) 280px, 100vw"
+                  src="./images/slider_mob/displya_243.png"
+                  alt="Man field"
+                />
+                <div class="card-box">
+                  <p class="type-card-p">Review</p>
+                  <h4 class="card-title-artcl-sl">
+                    Desk accessories to keep you organized
+                  </h4>
+                  <p class="date-p">November 24, 2021</p>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-cube-shadow1"></div>
           </div>
+        </div>
+
+        <!-- NO SLIDER -->
+        <div class="no-slider">
+          <ul class="article-card-list">
+            <li class="article-card-item">
+              <article class="article-card-no-slider">
+                <img
+                  srcset="./images/slider_mob/pen@2_243.png 2x"
+                  sizes="(max-width: 320px) 280px, 100vw"
+                  src="./images/slider_mob/pen_243.png"
+                  alt="Camera"
+                />
+                <div class="card-box card-box__d">
+                  <p class="type-card-p">Review</p>
+                  <h4 class="card-title-artcl-sl">
+                    The best pen I've ever used
+                  </h4>
+                  <p class="date-p">November 24, 2021</p>
+                </div>
+              </article>
+            </li>
+            <li class="article-card-item">
+              <article class="article-card-no-slider">
+                <img
+                  srcset="./images/slider_mob/man_field@2_243.png 2x"
+                  sizes="(max-width: 320px) 280px, 100vw"
+                  src="./images/slider_mob/man_field_243.png"
+                  alt="Man field"
+                />
+                <div class="card-box card-box__d">
+                  <p class="type-card-p">Review</p>
+                  <h4 class="card-title-artcl-sl">
+                    Tech-focused travel backpack
+                  </h4>
+                  <p class="date-p">November 24, 2021</p>
+                </div>
+              </article>
+            </li>
+            <li class="article-card-item">
+              <article class="article-card-no-slider">
+                <img
+                  srcset="./images/slider_mob/displya@2_243.png 2x"
+                  sizes="(max-width: 320px) 280px, 100vw"
+                  src="./images/slider_mob/displya_243.png"
+                  alt="Man field"
+                />
+                <div class="card-box card-box__d">
+                  <p class="type-card-p">Review</p>
+                  <h4 class="card-title-artcl-sl">
+                    Desk accessories to keep you organized
+                  </h4>
+                  <p class="date-p">November 24, 2021</p>
+                </div>
+              </article>
+            </li>
+          </ul>
         </div>
       </section>
 
       <!-- SUBSCRIPTION -->
-      <section class="subscription">
-        <p class="subtitle-subscr"><b>Stay in the know.</b></p>
-        <p class="text-subscr">
-          Sign-up to my newsletter to get an update whenever I post a new
-          article. I try to be very mindful of not spamming my subscribers.
-        </p>
-        <form class="subscr-form">
-          <label class="data-field">
-            <input
-              type="text"
-              name="name"
-              class="data-input"
-              placeholder="Enter name"
-            />
-            <span class="data-text">Name</span>
-          </label>
+      <section class="subscription" id="subscription">
+        <div class="subscr-block-text">
+          <p class="subtitle-subscr"><b>Stay in the know.</b></p>
+          <p class="text-subscr">
+            Sign-up to my newsletter to get an update whenever I post a new
+            article. I try to be very mindful of not spamming my subscribers.
+          </p>
+        </div>
 
-          <label class="data-field">
-            <input
-              type="email"
-              name="email"
-              class="data-input"
-              placeholder="Enter mail"
-            />
-            <span class="data-text">Email Address</span>
-          </label>
-        </form>
-        <button class="btn-subscr" type="button">Send</button>
+        <div class="subscr-block-form">
+          <form class="subscr-form">
+            <label class="data-field">
+              <input
+                type="text"
+                name="name"
+                class="data-input"
+                placeholder="Enter name"
+              />
+              <span class="data-text">Name</span>
+            </label>
+
+            <label class="data-field">
+              <input
+                type="email"
+                name="email"
+                class="data-input"
+                placeholder="Enter mail"
+              />
+              <span class="data-text">Email Address</span>
+            </label>
+
+            <!-- <button class="btn-subscr" type="button">Send</button> -->
+          </form>
+          <button class="btn-subscr" type="button">Send</button>
+        </div>
       </section>
 
       <!-- ARCHIVE -->
-      <section class="archive">
+      <section class="archive" id="archive">
         <div class="archive-container">
-          <ul>
-            <li>
+          <ul class="archive-list">
+            <li class="archive-item">
               <article class="archive-card-img">
                 <img
                   srcset="./images/mob_320/mountains@2_280.png 2x"
@@ -279,19 +387,21 @@
                   alt="Mountains"
                   class="archive-img"
                 />
-                <h2 hidden></h2>
-                <h3 class="archive-title">Travel spots in Iceland</h3>
-                <p class="card-description">
-                  Delectus sint nisi ut recusandae molestiae. Qui iure
-                  accusantium esse temporibus et. Aut atque vel labore officiis
-                  a dolor et. Molestiae dolor quo eius. Perferendis &#101;rror
-                  eveniet sit quia occaecati excepturi nisi prod.
-                </p>
-                <p class="date-a">November 24, 2021</p>
+                <div class="archive-box-content">
+                  <h2 hidden></h2>
+                  <h3 class="archive-title">Travel spots in Iceland</h3>
+                  <p class="card-description">
+                    Delectus sint nisi ut recusandae molestiae. Qui iure
+                    accusantium esse temporibus et. Aut atque vel labore
+                    officiis a dolor et. Molestiae dolor quo eius. Perferendis
+                    &#101;rror eveniet sit quia occaecati excepturi nisi prod.
+                  </p>
+                  <p class="date-a">November 24, 2021</p>
+                </div>
               </article>
             </li>
-            <li>
-              <article class="archive-card-img">
+            <li class="archive-item">
+              <article class="archive-card-img archive-card-img__last">
                 <img
                   srcset="./images/mob_320/climbing@2_280.png 2x"
                   sizes="(max-width: 320px) 280px, 100vw"
@@ -299,20 +409,22 @@
                   alt="Climbing"
                   class="archive-img"
                 />
-                <h2 hidden></h2>
-                <h3 class="archive-title">Climbing as exerc ise</h3>
-                <p class="card-description">
-                  Consequuntur voluptas quis dicta expedita in minus velit
-                  impedit deserunt. Quasi sit similique nemo praesentium
-                  excepturi commodi suscipit placeat. Incidunt libero
-                  necessitatibus. Commodi modi placeat. Sit et delenit.
-                </p>
-                <p class="date-a">November 24, 2021</p>
+                <div class="archive-box-content">
+                  <h2 hidden></h2>
+                  <h3 class="archive-title">Climbing as exerc ise</h3>
+                  <p class="card-description">
+                    Consequuntur voluptas quis dicta expedita in minus velit
+                    impedit deserunt. Quasi sit similique nemo praesentium
+                    excepturi commodi suscipit placeat. Incidunt libero
+                    necessitatibus. Commodi modi placeat. Sit et delenit.
+                  </p>
+                  <p class="date-a">November 24, 2021</p>
+                </div>
               </article>
             </li>
           </ul>
-          <ul class="archive-list">
-            <!-- те, що перенесеться до JSІ -->
+          <ul class="archive-list-loadMore">
+            <!-- те, що перенесеться до JS -->
           </ul>
 
           <!-- BUTTON -->
@@ -331,29 +443,34 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="footer">
+    <footer class="footer" id="info">
       <div class="footer-container">
         <div class="logo">
           <a href="./index.html">
-            <img src="./images/LogoCalm.svg" alt="logo" />
+            <img src="./images/LogoCalm.svg" alt="logo" class="logo-s" />
           </a>
         </div>
-        <p class="footer-text">
-          A lifestyle blog about minimalism, technology, design & travel.
-          Powered by
-        </p>
-        <div class="nav-footer">
-          <ul class="nav-footer-list">
-            <li class="nav-footer-item">Start</li>
-            <li class="nav-footer-item">Archive</li>
-          </ul>
+        <div class="footer-box">
+          <div class="footer-block-text">
+            <p class="footer-text">
+              A lifestyle blog about minimalism, technology, design & travel.
+              Powered by a passion for simplicity and a love for exploring the
+              intersection of modern technology and elegant design.
+            </p>
+          </div>
+          <div class="nav-footer">
+            <ul class="nav-footer-list">
+              <li class="nav-footer-item">Start</li>
+              <li class="nav-footer-item">Archive</li>
+            </ul>
 
-          <ul class="info-footer-list">
-            <li class="info-footer-item">Instructions</li>
-            <li class="info-footer-item">Licenses</li>
-            <li class="info-footer-item">Style guide</li>
-            <li class="info-footer-item">Changelog</li>
-          </ul>
+            <ul class="info-footer-list">
+              <li class="info-footer-item">Instructions</li>
+              <li class="info-footer-item">Licenses</li>
+              <li class="info-footer-item">Style guide</li>
+              <li class="info-footer-item">Changelog</li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>

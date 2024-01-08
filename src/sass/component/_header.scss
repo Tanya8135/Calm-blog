@@ -1,4 +1,12 @@
 .header-container {
+  @include tablet {
+    padding: 20px 52px;
+  }
+
+  @include desktop {
+    padding: 20px 148px;
+  }
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -7,10 +15,53 @@
 }
 
 .burger-menu {
+  @include tablet {
+    display: none;
+  }
+
+  @include desktop {
+    display: none;
+  }
   fill: $logo-fill;
   max-height: 32px;
   background-color: transparent;
   outline: none;
   border: none;
   cursor: none;
+}
+
+.logo-s {
+  @include tabletMin {
+    min-width: 78px;
+  }
+}
+
+.header-list {
+  @include tabletMin {
+    display: flex;
+  }
+  display: none;
+}
+
+.header-item {
+  @include tablet {
+    margin-right: 32px;
+  }
+
+  @include desktop {
+    margin-right: 52px;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.header-link {
+  @include tablet {
+    @include font(16px, 1.1);
+  }
+
+  @include desktop {
+    font-size: 18px;
+  }
 }

@@ -1,22 +1,9 @@
 const path = require('path');
-// const fs = require('fs');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const ImageminWebpackPlugin = require('imagemin-webpack-plugin').default;
+// const ImageminWebpackPlugin = require('imagemin-webpack-plugin').default;
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ImageminWebpWebpackPlugin = require('imagemin-webp-webpack-plugin');
-
-// const filesDir = './src/partials';
-// const files = fs.readdirSync(filesDir);
-
-// const htmlPlugins = files.map(file => {
-//     return new HtmlWebpackPlugin({
-//         template: `./src/partials/${file}`,
-//         filename: file.replace('.html', '.ejs'),
-//         inject: 'body',
-//         content: file.replace('.html', ''),
-//     })
-// })
 
 module.exports = {
     entry: {
@@ -25,7 +12,9 @@ module.exports = {
     output: {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
+        assetModuleFilename: './images/[name].[contenthash][ext]',
     },
+
     mode: 'development',
     module: {
         rules: [
@@ -62,6 +51,41 @@ module.exports = {
                 ],
             },
             {
+                test: /\.(png|jpg|jpeg|gif)$/i,
+                use: [
+                    {
+                        loader: 'image-webpack-loader',
+                        options: {
+                            mozjpeg: {
+                                progressive: true,
+                                quality: 85,
+                            },
+                            optipng: {
+                                enabled: false,
+                            },
+                            pngquant: {
+                                quality: [0.85, 0.90],
+                                speed: 4,
+                            },
+                            gifsicle: {
+                                interlaced: false,
+                            },
+                            webp: {
+                                quality: 75,
+                            },
+                        },
+                    },
+                ],
+                type: 'asset/resource',
+            },
+            {
+                test: /\.svg$/,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'icons/[name].[contenthash][ext]',
+                },
+            },
+            {
                 test: /\.module\.css$/,
                 use: [
                     MiniCssExtractPlugin.loader,
@@ -86,7 +110,6 @@ module.exports = {
         ],
     },
     plugins: [
-        // ...htmlPlugins,
         new HtmlWebpackPlugin({
             template: './src/index.html',
             filename: 'index.html',
@@ -99,7 +122,7 @@ module.exports = {
             config: [{
                 test: /\.(jpe?g|png)$/i,
                 options: {
-                    quality: 75,
+                    quality: 85,
                 },
             }],
             overrideExtension: true,
